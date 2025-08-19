@@ -28,7 +28,7 @@ module.exports = {
     },
     {
       name: "icd-server",
-      cwd: "./server/www",
+      cwd: "./server/dist",
       script: "server.js",
       instances: 1,
       autorestart: true,
