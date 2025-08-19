@@ -1,0 +1,161 @@
+<div id="smooth-wrapper">
+  <div id="smooth-content">
+    <header class="header">
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="nav-logo">
+            <a routerLink="/home">
+              <img src="/logo.png" alt="ICD GROUP Logo" style="height: 48px; width: auto; display: block;" />
+            </a>
+          </div>
+          <ul class="nav-menu" [class.active]="isMenuOpen">
+            <li class="nav-item">
+              <a routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-link" (click)="closeMenu()">Acasă</a>
+            </li>
+            <li class="nav-item">
+              <a routerLink="/about" routerLinkActive="active" class="nav-link" (click)="closeMenu()">Despre Noi</a>
+            </li>
+            <li class="nav-item">
+              <a routerLink="/energy-solutions" routerLinkActive="active" class="nav-link" (click)="closeMenu()">Soluții Energetice</a>
+            </li>
+            <li class="nav-item">
+              <a routerLink="/portfolio" routerLinkActive="active" class="nav-link" (click)="closeMenu()">Portofoliu</a>
+            </li>
+            <li class="nav-item">
+              <a routerLink="/partnership" routerLinkActive="active" class="nav-link" (click)="closeMenu()">Parteneriat</a>
+            </li>
+            <li class="nav-item">
+              <a routerLink="/contact" routerLinkActive="active" class="nav-link" (click)="closeMenu()">Contact</a>
+            </li>
+          </ul>
+          <div class="hamburger" (click)="toggleMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <!-- Hero Section -->
+      <section class="hero">
+        <img src="/fotovoltaic 3.jpeg" alt="Fotovoltaic"
+           style="position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; z-index:1; filter: brightness(75%);">
+        <div class="hero-content">
+          <h1>Soluții Energetice</h1>
+          <p class="hero-subtitle">Investim în Independența Energetică a României</p>
+          <p>Intrarea pe piața energiei este o evoluție naturală pentru un dezvoltator de infrastructură. Înțelegem că viitorul depinde de o sursă de energie sigură și curată.</p>
+        </div>
+      </section>
+
+      <!-- Energy Overview Section -->
+      <section class="section">
+        <div class="container">
+          <div class="section-title">
+            <h2>Oportunitatea Unică în România</h2>
+            <p>Ne angajăm în acest sector într-un moment de transformare istorică pentru România, susținut de ținte naționale ambițioase și fonduri europene masive. Expansiunea rapidă a surselor regenerabile creează o nevoie critică de soluții de stocare, iar noi suntem pregătiți să construim infrastructura necesară având în desfășurare multiple proiecte BESS stand alone.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Photovoltaic Parks Section -->
+      <section class="section" style="background-color: var(--light-gray);">
+        <div class="container">
+          <div class="section-title">
+            <h2>Parcuri Fotovoltaice – Investiții Inteligente</h2>
+            <p>Oferim soluții complete "la cheie" pentru dezvoltarea parcurilor fotovoltaice, de la identificarea terenului la racordarea la rețea. Expertiza noastră în management de proiect garantează o execuție eficientă.</p>
+          </div>
+          
+          <div class="grid grid-3">
+            <div class="card fade-in-up">
+              <h3>Rentabilitate Superioară</h3>
+              <p>Investițiile în fotovoltaice pot oferi o rentabilitate superioară celor imobiliare.</p>
+            </div>
+            
+            <div class="card fade-in-up">
+              <h3>Implementare Rapidă</h3>
+              <p>Cu echipa noastră dedicată putem implementa rapid orice proiect energetic.</p>
+            </div>
+            
+            <div class="card fade-in-up">
+              <h3>Soluții de Finanțare</h3>
+              <p>Putem asigura soluții de finanțare atât bancare cât și private astfel încât ROE să fie excelent.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BESS Systems Section -->
+      <section class="section">
+        <div class="container">
+          <div class="section-title">
+            <h2>Sisteme de Stocare a Energiei (BESS) – Cheia Rezilienței</h2>
+            <p>Sistemele de Stocare a Energiei în Baterii (BESS) sunt critice pentru tranziția verde. Ele stabilizează rețeaua, absorb surplusul de energie și îl eliberează la nevoie, prevenind penele de curent.</p>
+          </div>
+          
+          <div class="grid grid-2">
+            <div class="card fade-in-up">
+              <h3>Oportunitatea Unică în România</h3>
+              <p>Recent, ANRE a eliminat dubla taxare pentru energia stocată, o barieră majoră pentru investitori. Această decizie a trimis un semnal clar de sprijin pentru stocarea energiei, iar ICD GROUP este pregătit să valorifice această oportunitate.</p>
+            </div>
+            
+            <div class="card fade-in-up">
+              <h3>Soluțiile BESS de la ICD GROUP</h3>
+              <ul>
+                <li><strong>Proiecte la Scară Largă:</strong> Esențiale pentru echilibrarea Sistemului Energetic Național. ICD dezvoltă proiecte medii și mari de stocare.</li>
+                <li><strong>Sisteme Integrate PV+BESS:</strong> Maximizăm eficiența și rentabilitatea investiției.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Energy Projects Section -->
+      <section class="section" style="background-color: var(--light-gray);">
+        <div class="container">
+          <div class="section-title">
+            <h2>Proiecte Energetice în Desfășurare</h2>
+            <p>Avem multiple proiecte BESS stand alone în desfășurare, contribuind la securitatea energetică a României.</p>
+          </div>
+          
+          <div class="grid grid-2">
+            <div class="card fade-in-up">
+              <h3>Proiecte BESS Stand Alone</h3>
+              <p>Dezvoltăm sisteme de stocare independente care pot fi integrate în rețeaua națională pentru a asigura stabilitatea și eficiența sistemului energetic.</p>
+            </div>
+            
+            <div class="card fade-in-up">
+              <h3>Integrare în Rețeaua Națională</h3>
+              <p>Proiectele noastre sunt concepute pentru a se integra perfect în infrastructura energetică existentă, contribuind la modernizarea și eficientizarea sistemului.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>ICD GROUP</h3>
+          <p>Dezvoltăm Comunități. Generăm Viitor.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <p>Str Petru Rares 5-9 sc 2 ap 7, Sector 1, Bucuresti</p>
+          <p>Telefon: 0742.22.66.88</p>
+        </div>
+        <div class="footer-section">
+          <h4>Divizii</h4>
+          <ul>
+            <li>Dezvoltări Energetice</li>
+            <li>Dezvoltări Imobiliare</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 ICD GROUP. Toate drepturile rezervate.</p>
+      </div>
+    </footer>
+  </div>
+</div> 

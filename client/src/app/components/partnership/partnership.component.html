@@ -1,0 +1,164 @@
+<div id="smooth-wrapper">
+  <div id="smooth-content">
+    <header class="header">
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="nav-logo">
+            <a routerLink="/home">
+              <img src="/logo.png" alt="ICD GROUP Logo" style="height: 48px; width: auto; display: block;" />
+            </a>
+          </div>
+          <ul class="nav-menu" [class.active]="isMenuOpen">
+            <li class="nav-item">
+              <a routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-link" (click)="closeMenu()">Acasă</a>
+            </li>
+            <li class="nav-item">
+              <a routerLink="/about" routerLinkActive="active" class="nav-link" (click)="closeMenu()">Despre Noi</a>
+            </li>
+            <li class="nav-item">
+              <a routerLink="/energy-solutions" routerLinkActive="active" class="nav-link" (click)="closeMenu()">Soluții Energetice</a>
+            </li>
+            <li class="nav-item">
+              <a routerLink="/portfolio" routerLinkActive="active" class="nav-link" (click)="closeMenu()">Portofoliu</a>
+            </li>
+            <li class="nav-item">
+              <a routerLink="/partnership" routerLinkActive="active" class="nav-link" (click)="closeMenu()">Parteneriat</a>
+            </li>
+            <li class="nav-item">
+              <a routerLink="/contact" routerLinkActive="active" class="nav-link" (click)="closeMenu()">Contact</a>
+            </li>
+          </ul>
+          <div class="hamburger" (click)="toggleMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <!-- Hero Section -->
+      <section class="hero" style="min-height: 10dvh;">
+        <div class="hero-content">
+          <h1>Oportunități de Parteneriat</h1>
+          <p>Căutăm parteneri care împărtășesc viziunea și standardele noastre de excelență pentru a capitaliza oportunitățile unice de pe piața românească.</p>
+        </div>
+      </section>
+
+      <!-- Partnership Opportunities Section -->
+      <section class="section">
+        <div class="container">
+          <div class="section-title">
+            <h2>Modele de Parteneriat</h2>
+            <p>Construim împreună proiecte profitabile și durabile în sectorul energetic și imobiliar.</p>
+          </div>
+          
+          <div class="grid grid-3">
+            <div class="card fade-in-up">
+              <h3>Pentru Investitori</h3>
+              <p>Vă invităm să descoperiți modelele noastre de parteneriat pentru a construi împreună proiecte profitabile și durabile în sectorul energetic.</p>
+              <ul>
+                <li>Investiții în parcuri fotovoltaice</li>
+                <li>Proiecte BESS stand alone</li>
+                <li>Dezvoltări imobiliare premium</li>
+                <li>ROE excelent garantat</li>
+              </ul>
+            </div>
+            
+            <div class="card fade-in-up">
+              <h3>Pentru Proprietari de Terenuri</h3>
+              <p>Dețineți un teren pretabil pentru un parc fotovoltaic? Contactați-ne pentru a explora opțiuni flexibile de colaborare.</p>
+              <ul>
+                <li>Evaluare gratuită a terenului</li>
+                <li>Opțiuni flexibile de colaborare</li>
+                <li>Dezvoltare la cheie</li>
+                <li>Beneficii pe termen lung</li>
+              </ul>
+            </div>
+            
+            <div class="card fade-in-up">
+              <h3>Pentru Parteneri Industriali</h3>
+              <p>Suntem deschiși la colaborări cu furnizori de tehnologie de top și companii de construcții specializate.</p>
+              <ul>
+                <li>Furnizori de tehnologie</li>
+                <li>Companii de construcții</li>
+                <li>Expertiză tehnică</li>
+                <li>Proiecte la scară mare</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Partner With Us Section -->
+      <section class="section" style="background-color: var(--light-gray);">
+        <div class="container">
+          <div class="section-title">
+            <h2>De Ce Să Parteneriați Cu ICD GROUP?</h2>
+          </div>
+          
+          <div class="grid grid-2">
+            <div class="card fade-in-up">
+              <h3>Experiență Dovedită</h3>
+              <p>Peste 18 ani de experiență în dezvoltare imobiliară și o echipă cu expertiză în proiecte energetice complexe. Am gestionat investiții de peste 100 de milioane de euro cu succes.</p>
+            </div>
+            
+            <div class="card fade-in-up">
+              <h3>Oportunități Unice</h3>
+              <p>Capitalizăm pe oportunitățile unice de pe piața românească, inclusiv eliminarea dublei taxări pentru energia stocată și fondurile europene disponibile pentru proiecte verzi.</p>
+            </div>
+            
+            <div class="card fade-in-up">
+              <h3>Abordare Integrată</h3>
+              <p>Oferim soluții complete de la concept la implementare, cu expertiză atât în sectorul imobiliar cât și în cel energetic, oferind diversificare și stabilitate investițională.</p>
+            </div>
+            
+            <div class="card fade-in-up">
+              <h3>Angajament pe Termen Lung</h3>
+              <p>Construim relații de încredere cu partenerii noștri, asigurând un angajament pe termen lung și o abordare transparentă în toate proiectele noastre.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact CTA Section -->
+      <section class="section">
+        <div class="container">
+          <div class="section-title">
+            <h2>Hai Să Discutăm</h2>
+            <p>Suntem aici pentru a explora împreună oportunitățile de parteneriat și pentru a construi viitorul României.</p>
+          </div>
+          
+          <div class="text-center">
+            <a routerLink="/contact" class="btn btn-primary">Contactați-ne Acum</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>ICD GROUP</h3>
+          <p>Dezvoltăm Comunități. Generăm Viitor.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <p>Str Petru Rares 5-9 sc 2 ap 7, Sector 1, Bucuresti</p>
+          <p>Telefon: 0742.22.66.88</p>
+        </div>
+        <div class="footer-section">
+          <h4>Divizii</h4>
+          <ul>
+            <li>Dezvoltări Energetice</li>
+            <li>Dezvoltări Imobiliare</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 ICD GROUP. Toate drepturile rezervate.</p>
+      </div>
+    </footer>
+  </div>
+</div> 

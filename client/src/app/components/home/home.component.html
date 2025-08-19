@@ -1,0 +1,155 @@
+<div id="smooth-wrapper">
+  <div id="smooth-content">
+    <header class="header">
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="nav-logo">
+            <a routerLink="/home">
+              <img src="/logo.png" alt="ICD GROUP Logo" style="height: 48px; width: auto; display: block;" />
+            </a>
+          </div>
+          <ul class="nav-menu" [class.active]="isMenuOpen">
+            <li class="nav-item">
+              <a routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-link" (click)="closeMenu()">Acasă</a>
+            </li>
+            <li class="nav-item">
+              <a routerLink="/about" routerLinkActive="active" class="nav-link" (click)="closeMenu()">Despre Noi</a>
+            </li>
+            <li class="nav-item">
+              <a routerLink="/energy-solutions" routerLinkActive="active" class="nav-link" (click)="closeMenu()">Soluții Energetice</a>
+            </li>
+            <li class="nav-item">
+              <a routerLink="/portfolio" routerLinkActive="active" class="nav-link" (click)="closeMenu()">Portofoliu</a>
+            </li>
+            <li class="nav-item">
+              <a routerLink="/partnership" routerLinkActive="active" class="nav-link" (click)="closeMenu()">Parteneriat</a>
+            </li>
+            <li class="nav-item">
+              <a routerLink="/contact" routerLinkActive="active" class="nav-link" (click)="closeMenu()">Contact</a>
+            </li>
+          </ul>
+          <div class="hamburger" (click)="toggleMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <!-- Hero Section -->
+      <section class="hero">
+        <img ngSrc="/fotovoltaic 2.jpg" fill priority alt="Fotovoltaic"
+           style="position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; z-index:1; filter: brightness(50%);">
+        <div class="hero-content">
+          <h1>ICD GROUP</h1>
+          <p class="hero-subtitle">Dezvoltăm Comunități. Generăm Viitor.</p>
+          <p>La ICD GROUP, construim viitorul pe două fundamente esențiale: comunități durabile unde oamenii prosperă și o infrastructură energetică inteligentă care le susține.</p>
+          <div class="hero-buttons">
+            <a routerLink="/energy-solutions" class="btn btn-primary">Descoperiți Soluțiile Energetice</a>
+            <a routerLink="/portfolio" class="btn btn-secondary">Explorați Portofoliul Imobiliar</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stats Section -->
+      <section class="stats-section">
+        <div class="container">
+          <div class="stats-grid">
+            <div class="stat-item">
+              <h3>18+</h3>
+              <p>Ani de Experiență</p>
+            </div>
+            <div class="stat-item">
+              <h3>50M+</h3>
+              <p>Euro Investiții Gestionate</p>
+            </div>
+            <div class="stat-item">
+              <h3>100%</h3>
+              <p>Proiecte Finalizate cu Succes</p>
+            </div>
+            <div class="stat-item">
+              <h3>2</h3>
+              <p>Divizii Strategice</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Strategic Divisions Section -->
+      <section class="section">
+        <div class="container">
+          <div class="section-title">
+            <h2>Diviziile Noastre Strategice</h2>
+            <p>Cu o experiență solidă în dezvoltare imobiliară și o viziune clară pentru energie regenerabilă, transformăm peisajul României, proiect cu proiect.</p>
+          </div>
+          
+          <div class="grid grid-2">
+            <div class="card fade-in-up">
+              <h3>Dezvoltări Energetice</h3>
+              <p>Dezvoltăm parcuri fotovoltaice la cheie și implementăm sisteme avansate de stocare a energiei (BESS), contribuind la securitatea energetică a României într-un context de piață unic.</p>
+              <a routerLink="/energy-solutions" class="btn btn-primary">Descoperiți Soluțiile Energetice</a>
+            </div>
+            
+            <div class="card fade-in-up">
+              <h3>Dezvoltări Imobiliare</h3>
+              <p>De peste 18 ani, creăm spații de locuit excepționale și regenerăm zone urbane. Portofoliul nostru, cu investiții gestionate de peste 50 de milioane de euro, este garanția calității.</p>
+              <a routerLink="/portfolio" class="btn btn-primary">Explorați Portofoliul Imobiliar</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Commitment Section -->
+      <section class="section" style="background-color: var(--light-gray);">
+        <div class="container">
+          <div class="section-title">
+            <h2>Angajamentul Nostru</h2>
+          </div>
+          
+          <div class="grid grid-3">
+            <div class="card fade-in-up">
+              <h3>Inovație</h3>
+              <p>Anticipăm tendințele pieței și integrăm cele mai noi tehnologii, de la soluții BESS pentru rețeaua energetică la concepte de regenerare urbană în zone strategice.</p>
+            </div>
+            
+            <div class="card fade-in-up">
+              <h3>Sustenabilitate</h3>
+              <p>Fiecare proiect este conceput cu un profund respect pentru mediu și pentru moștenirea lăsată generațiilor viitoare, inclusiv prin protejarea patrimoniului cultural.</p>
+            </div>
+            
+            <div class="card fade-in-up">
+              <h3>Integritate</h3>
+              <p>Construim pe o fundație de încredere. Reputația noastră este cel mai de preț activ, reflectat în fiecare parteneriat și proiect finalizat.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>ICD GROUP</h3>
+          <p>Dezvoltăm Comunități. Generăm Viitor.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <p>Str Petru Rares 5-9 sc 2 ap 7, Sector 1, Bucuresti</p>
+          <p>Telefon: 0742.22.66.88</p>
+        </div>
+        <div class="footer-section">
+          <h4>Divizii</h4>
+          <ul>
+            <li>Dezvoltări Energetice</li>
+            <li>Dezvoltări Imobiliare</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 ICD GROUP. Toate drepturile rezervate.</p>
+      </div>
+    </footer>
+  </div>
+</div> 

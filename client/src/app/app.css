@@ -1,0 +1,18 @@
+/* App-specific styles */
+.nav-menu.active {
+  left: 0;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior:unset ;
+}
+
+/* Loading animation for images */
+.portfolio-image {
+  transition: opacity 0.3s ease;
+}
+
+.portfolio-image.loading {
+  opacity: 0.5;
+}
