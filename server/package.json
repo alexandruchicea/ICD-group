@@ -4,10 +4,12 @@
   "description": "Backend API for ICD Group website with reCAPTCHA v2 verification",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc",
-    "start": "node dist/index.js",
-    "dev": "ts-node src/index.ts",
-    "watch": "nodemon --exec ts-node src/index.ts"
+    "start": "npm run only-build && npm run watch",
+    "only-build": "npm run build-ts",
+    "build-ts": "tsc --skipLibCheck",
+    "watch-ts": "tsc -w",
+    "watch": "concurrently -k -p \"[{name}]\" -n \"TypeScript,Node\" -c \"yellow.bold,cyan.bold,green.bold\" \"npm run watch-ts\" \"npm run serve\"",
+    "serve": "cd ./dist && nodemon server.js"
   },
   "keywords": [
     "nodejs",

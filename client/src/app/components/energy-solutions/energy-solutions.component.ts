@@ -1,19 +1,24 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit, PLATFORM_ID } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ScrollSmoother } from 'gsap/ScrollSmoother';
+import { isPlatformBrowser } from '@angular/common';
 
 @Component({
   selector: 'app-energy-solutions',
   imports: [RouterLink, RouterLinkActive],
   templateUrl: './energy-solutions.component.html',
-  styleUrls: ['./energy-solutions.component.css']
+  styleUrls: ['./energy-solutions.component.css'],
 })
 export class EnergySolutionsComponent implements OnInit {
   isMenuOpen = false;
+  private platformId = inject(PLATFORM_ID);
 
   ngOnInit() {
+    if (!isPlatformBrowser(this.platformId)) {
+      return;
+    }
     gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
     // Wait for DOM to be ready
     setTimeout(() => {
@@ -24,7 +29,7 @@ export class EnergySolutionsComponent implements OnInit {
           wrapper: '#smooth-wrapper',
           content: '#smooth-content',
           smooth: 1.2,
-          effects: true
+          effects: true,
         });
       }
     }, 0);
@@ -37,4 +42,4 @@ export class EnergySolutionsComponent implements OnInit {
   closeMenu() {
     this.isMenuOpen = false;
   }
-} 
+}

@@ -1,13 +1,14 @@
 import dotenv from 'dotenv';
+import * as path from "path";
+
+dotenv.config({ path: path.resolve(__dirname, "../.env")});
+
 import express from 'express';
 import cors from 'cors';
 import helmet from 'helmet';
 import rateLimit from 'express-rate-limit';
 import { contactRouter } from './routes/contact';
-import nodemailer from "nodemailer";
-
 // Load environment variables
-dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 3001;
