@@ -92,7 +92,7 @@ export class PortfolioComponent implements OnInit {
       year: '2023',
       type: 'Commercial',
       image:
-        'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&h=250&fit=crop',
+        '/ghermanesti.jpg',
     },
     {
       name: 'Tarlungeni',
@@ -100,7 +100,7 @@ export class PortfolioComponent implements OnInit {
       year: '2025',
       type: 'Comercial',
       image:
-        'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&h=250&fit=crop',
+        '/tarlungeni.jpg',
     },
     {
       name: 'Dragalina',

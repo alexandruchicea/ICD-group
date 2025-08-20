@@ -19,7 +19,7 @@ app.use(helmet());
 // CORS configuration
 app.use(cors({
   origin: process.env.NODE_ENV === 'production' 
-    ? ['https://yourdomain.com'] // Replace with your actual domain
+    ? process.env.PRODUCTION_URL // Replace with your actual domain
     : ['http://localhost:4200', 'http://localhost:3000'],
   credentials: true
 }));
@@ -64,10 +64,6 @@ app.use((err: any, req: express.Request, res: express.Response, next: express.Ne
 });
 
 // Start server
-app.listen(PORT, () => {
-  console.log(`🚀 Server running on port ${PORT}`);
-  console.log(`📧 reCAPTCHA verification enabled`);
-  console.log(`🔒 Environment: ${process.env.NODE_ENV || 'development'}`);
-});
+app.listen(PORT)
 
 export default app;

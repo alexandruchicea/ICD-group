@@ -2,8 +2,6 @@ import axios from "axios";
 
 export interface RecaptchaVerificationResult {
   "success": boolean;
-  "score"?: number; // For v3, undefined for v2
-  "action"?: string; // For v3, undefined for v2
   "challenge_ts"?: string;
   "hostname"?: string;
   "error-codes"?: string[];
@@ -22,15 +20,12 @@ export async function verifyRecaptcha(token: string): Promise<RecaptchaVerificat
       throw new Error("reCAPTCHA secret key not configured");
     }
 
-    // Get client IP from environment or use a default
-    const remoteIp = process.env.CLIENT_IP || "127.0.0.1";
 
     // Make request to Google's verification endpoint
     const response = await axios.post("https://www.google.com/recaptcha/api/siteverify", null, {
       params: {
         secret: secretKey,
         response: token,
-        remoteip: remoteIp,
       },
       timeout: 10000, // 10 second timeout
     });
@@ -41,8 +36,6 @@ export async function verifyRecaptcha(token: string): Promise<RecaptchaVerificat
     if (process.env.NODE_ENV === "development") {
       console.log("reCAPTCHA verification result:", {
         success: result.success,
-        score: result.score,
-        action: result.action,
         hostname: result.hostname,
         timestamp: result.challenge_ts,
         errors: result["error-codes"],

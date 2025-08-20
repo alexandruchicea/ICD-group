@@ -49,13 +49,6 @@ router.post('/contact', async (req, res) => {
       });
     }
 
-    // If reCAPTCHA score is too low (for v3)
-    if (recaptchaResult.score !== undefined && recaptchaResult.score < 0.5) {
-      console.log('reCAPTCHA score too low:', recaptchaResult.score);
-      return res.status(400).json({
-        error: 'reCAPTCHA verification failed. Please try again.'
-      });
-    }
 
     // Log submission (could also save to DB)
     console.log('Contact form submission:', {

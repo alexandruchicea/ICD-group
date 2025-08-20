@@ -16,6 +16,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ScrollSmoother } from 'gsap/ScrollSmoother';
+import { API_URL } from '../../../app.config.url';
 
 declare global {
   interface Window {
@@ -171,7 +172,7 @@ export class ContactComponent implements AfterViewInit, OnInit {
     this.submitting = 'pending';
 
     this.http
-      .post('http://localhost:3001/api/contact', {
+      .post(`${API_URL}/contact`, {
         recaptchaToken: recaptchaValue,
         name: this.contactForm.name,
         email: this.contactForm.email,
