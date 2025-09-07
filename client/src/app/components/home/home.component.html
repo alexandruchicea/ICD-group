@@ -6,7 +6,7 @@
           <div class="nav-logo">
             <a routerLink="/home">
               <img
-                src="/logo.png"
+                src="logo.png"
                 alt="ICD GROUP Logo"
                 style="height: 48px; width: auto; display: block"
               />
@@ -76,15 +76,6 @@
             </li>
             <li class="nav-item">
               <button
-                class="nav-button"
-                (click)="onApply()"
-                i18n="@@homeNavApply"
-              >
-                {{ isRomanian ? "Aplică acum" : "Apply now" }}
-              </button>
-            </li>
-            <li class="nav-item">
-              <button
                 class="nav-button language-toggle"
                 (click)="toggleLanguage()"
                 [title]="getLanguageToggleTitle()"
@@ -107,7 +98,7 @@
       <!-- Hero Section -->
       <section class="hero">
         <img
-          ngSrc="/fotovoltaic 2.jpg"
+          ngSrc="fotovoltaic_2.jpg"
           fill
           priority
           alt="Fotovoltaic"

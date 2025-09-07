@@ -16,7 +16,9 @@
       "i18n": {
         "sourceLocale": "ro",
         "locales": {
-          "en": "src/locale/messages.en.xlf"
+          "en": {
+            "translation": "src/locale/messages.en.xlf"
+          }
         }
       },
       "architect": {
@@ -46,7 +48,7 @@
           },
           "configurations": {
             "production": {
-              "localize": ["ro", "en"],
+              "localize": true,
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,

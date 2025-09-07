@@ -4,6 +4,8 @@ import { isPlatformBrowser, NgOptimizedImage } from '@angular/common';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ScrollSmoother } from 'gsap/ScrollSmoother';
+import { Language, LanguageService } from '../../services/language.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-home',
@@ -15,10 +17,30 @@ export class HomeComponent implements OnInit {
   isMenuOpen = false;
   private platformId = inject(PLATFORM_ID);
 
+  private languageService = inject(LanguageService);
+  private languageSubscription?: Subscription;
+
+  currentLanguage: Language = 'ro';
+  isRomanian = true;
+  currentFlag = '🇷🇴';
+  currentLanguageLabel = 'Română';
+
   ngOnInit() {
     if (!isPlatformBrowser(this.platformId)) {
       return;
     }
+
+    this.languageSubscription = this.languageService.language$.subscribe(
+      (language) => {
+        this.currentLanguage = language;
+        this.isRomanian = this.languageService.isRomanian();
+        this.currentFlag = this.languageService.getLanguageFlag();
+        this.currentLanguageLabel = this.languageService.getLanguageLabel();
+
+        // Update document language
+        document.documentElement.lang = language;
+      }
+    );
     gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
     // Wait for DOM to be ready
     setTimeout(() => {
@@ -42,7 +64,14 @@ export class HomeComponent implements OnInit {
   closeMenu() {
     this.isMenuOpen = false;
   }
-  onApply(language: 'ro') {
-    document.documentElement.lang = 'ro';
+
+  toggleLanguage() {
+    this.languageService.toggleLanguage();
+  }
+
+  getLanguageToggleTitle(): string {
+    const otherLang = this.isRomanian ? 'en' : 'ro';
+    const otherLangLabel = this.languageService.getLanguageLabel(otherLang);
+    return `Switch to ${otherLangLabel}`;
   }
 }
