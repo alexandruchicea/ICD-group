@@ -1,0 +1,230 @@
+<div id="smooth-wrapper">
+  <div id="smooth-content">
+    <header class="header">
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="nav-logo">
+            <a routerLink="/home">
+              <img
+                src="/logo.png"
+                alt="ICD GROUP Logo"
+                style="height: 48px; width: auto; display: block"
+              />
+            </a>
+          </div>
+          <ul class="nav-menu" [class.active]="isMenuOpen">
+            <li class="nav-item">
+              <a
+                routerLink="/home"
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{ exact: true }"
+                class="nav-link"
+                (click)="closeMenu()"
+                i18n="@@home"
+                >Acasă</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                routerLink="/about"
+                routerLinkActive="active"
+                class="nav-link"
+                (click)="closeMenu()"
+                i18n="@@about"
+                >Despre Noi</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                routerLink="/energy-solutions"
+                routerLinkActive="active"
+                class="nav-link"
+                (click)="closeMenu()"
+                i18n="@@energySolutions"
+                >Soluții Energetice</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                routerLink="/portfolio"
+                routerLinkActive="active"
+                class="nav-link"
+                (click)="closeMenu()"
+                i18n="@@portfolio"
+                >Portofoliu Imobiliar</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                routerLink="/partnership"
+                routerLinkActive="active"
+                class="nav-link"
+                (click)="closeMenu()"
+                i18n="@@partnership"
+                >Parteneriat</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                routerLink="/contact"
+                routerLinkActive="active"
+                class="nav-link"
+                (click)="closeMenu()"
+                i18n="@@contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <div class="hamburger" (click)="toggleMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <!-- Hero Section -->
+      <section class="hero">
+        <img
+          src="/collage.png"
+          alt="Fotovoltaic"
+          style="
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+            filter: brightness(50%);
+          "
+        />
+        <div class="hero-content">
+          <h1 i18n="@@heroTitle">Portofoliu Imobiliar</h1>
+          <p class="hero-subtitle" i18n="@@heroSubtitle">
+            Peste 18 Ani Modelând Orizontul Urban
+          </p>
+          <p i18n="@@heroDescription">
+            Filosofia noastră se bazează pe calitate, design funcțional și
+            integrare armonioasă în țesutul urban. Nu construim doar clădiri, ci
+            creăm comunități și repere care aduc plusvaloare zonelor în care
+            activăm.
+          </p>
+        </div>
+      </section>
+
+      <!-- Completed Projects Section -->
+      <section class="section">
+        <div class="container">
+          <div class="section-title">
+            <h2 i18n="@@completedProjectsTitle">Proiecte Finalizate</h2>
+            <p i18n="@@completedProjectsSubtitle">
+              Experiența noastră este demonstrată de un portofoliu diversificat
+              de proiecte finalizate cu succes.
+            </p>
+          </div>
+
+          <div class="portfolio-grid">
+            @for ( project of projects; track project.name ){
+            <div class="portfolio-item fade-in-up">
+              <img
+                [src]="project.image"
+                [alt]="project.name"
+                class="portfolio-image"
+                (error)="$event.target.style.display = 'none'"
+              />
+              <div class="portfolio-content">
+                <h3>{{ project.name }}</h3>
+                <p i18n="@@location">
+                  <strong>Locație:</strong> {{ project.location }}
+                </p>
+                <p i18n="@@finishedYear">
+                  <strong>An Finalizare:</strong> {{ project.year }}
+                </p>
+                <p i18n="@@type">
+                  <strong>Tipologie:</strong>
+                  {{ project.type[currentLang] }}
+                </p>
+              </div>
+            </div>
+            }
+          </div>
+        </div>
+      </section>
+
+      <!-- Heritage and Restoration Section -->
+      <section class="section" style="background-color: var(--light-gray)">
+        <div class="container">
+          <div class="section-title">
+            <h2 i18n="@@heritageTitle">Patrimoniu și Restaurare</h2>
+            <p i18n="@@heritageSubtitle">
+              Angajamentul nostru depășește dezvoltarea de la zero
+            </p>
+          </div>
+
+          <div class="grid grid-2">
+            <div class="card fade-in-up">
+              <h3 i18n="@@heritageCard1Title">Protejarea Patrimoniului</h3>
+              <p i18n="@@heritageCard1Text">
+                Am achiziționat o vilă istorică emblematică în centrul
+                Bucureștiului, cu scopul de a o restaura. Acest demers reflectă
+                filosofia noastră de a proteja și valorifica patrimoniul istoric
+                și cultural al orașului pentru generațiile viitoare.
+              </p>
+            </div>
+
+            <div class="card fade-in-up">
+              <h3 i18n="@@heritageCard2Title">Regenerarea Urbană</h3>
+              <p i18n="@@heritageCard2Text">
+                Ne angajăm în proiecte de anvergură care transformă comunități,
+                precum regenerarea urbană a fostei platforme industriale FIRM
+                RECOM și angajamentul pentru conservarea patrimoniului prin
+                restaurarea unor clădiri istorice.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3 i18n="@@footerCompanyName">ICD GROUP</h3>
+          <p i18n="@@footerSlogan">Dezvoltăm Comunități. Generăm Viitor.</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>
+            <a routerLink="/contact" i18n="@@footerContact">Contact</a>
+          </h4>
+          <h4>
+            <a
+              href="https://docs.google.com/document/d/1oCtRIs4Vv5bFFu3Q44Prhmxw0EmAeO3flP8Cld3Yb5k/edit?usp=sharing"
+              target="_blank"
+              rel="noopener"
+              i18n="@@footerGDPR"
+              >Info GDPR</a
+            >
+          </h4>
+        </div>
+
+        <div class="footer-section">
+          <h4 i18n="@@footerDivisions">Divizii</h4>
+          <ul>
+            <li i18n="@@footerEnergy1">Dezvoltări Energetice</li>
+            <li i18n="@@footerRealEstateDivision">Dezvoltări Imobiliare</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p i18n="@@footerRights">
+          &copy; 2025 ICD GROUP. Toate drepturile rezervate.
+        </p>
+      </div>
+    </footer>
+  </div>
+</div>

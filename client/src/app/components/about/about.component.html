@@ -1,0 +1,254 @@
+<div id="smooth-wrapper">
+  <div id="smooth-content">
+    <header class="header">
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="nav-logo">
+            <a routerLink="/home">
+              <img
+                src="/logo.png"
+                alt="Logo ICD GROUP"
+                style="height: 48px; width: auto; display: block"
+              />
+            </a>
+          </div>
+          <ul class="nav-menu" [class.active]="isMenuOpen">
+            <li class="nav-item">
+              <a
+                routerLink="/home"
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{ exact: true }"
+                class="nav-link"
+                (click)="closeMenu()"
+                i18n="@@aboutNavHome"
+                >Acasă</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                routerLink="/about"
+                routerLinkActive="active"
+                class="nav-link"
+                (click)="closeMenu()"
+                i18n="@@aboutNavAbout"
+                >Despre noi</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                routerLink="/energy-solutions"
+                routerLinkActive="active"
+                class="nav-link"
+                (click)="closeMenu()"
+                i18n="@@aboutNavEnergySolutions"
+                >Soluții energetice</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                routerLink="/portfolio"
+                routerLinkActive="active"
+                class="nav-link"
+                (click)="closeMenu()"
+                i18n="@@aboutNavPortfolio"
+                >Portofoliu imobiliar</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                routerLink="/partnership"
+                routerLinkActive="active"
+                class="nav-link"
+                (click)="closeMenu()"
+                i18n="@@aboutNavPartnership"
+                >Parteneriat</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                routerLink="/contact"
+                routerLinkActive="active"
+                class="nav-link"
+                (click)="closeMenu()"
+                i18n="@@aboutNavContact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <div class="hamburger" (click)="toggleMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <!-- Secțiune Hero -->
+      <section class="hero">
+        <img
+          src="/fotovoltaic 1.jpg"
+          alt="Fotovoltaic"
+          style="
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+            filter: brightness(50%);
+          "
+        />
+        <div class="hero-content">
+          <h1 i18n="@@aboutHeroTitle">Despre noi</h1>
+          <p i18n="@@aboutHeroSubtitle">Fundamentul performanței</p>
+          <p i18n="@@aboutHeroDescription">
+            O moștenire de încredere, o viziune pentru viitor
+          </p>
+        </div>
+      </section>
+
+      <!-- Prezentare companie -->
+      <section class="section">
+        <div class="container">
+          <div class="section-title">
+            <h2 i18n="@@aboutCompanyTitle">ICD GROUP</h2>
+            <p i18n="@@aboutCompanyDescription">
+              Reprezintă rezultatul a peste 18 ani de experiență și viziune pe
+              piața românească. Ne-am consolidat poziția ca dezvoltator de
+              încredere, cu un portofoliu solid în gestionarea unor investiții
+              complexe și valoroase.
+            </p>
+          </div>
+
+          <div class="grid grid-2">
+            <div class="card fade-in-up">
+              <h3 i18n="@@aboutHistoryTitle">Istoria noastră</h3>
+              <p i18n="@@aboutHistoryParagraph1">
+                Drumul nostru a început în sectorul imobiliar, gestionând
+                investiții de peste 100 milioane de euro. Am evoluat de la
+                proiecte rezidențiale în zone emergente la dezvoltări premium în
+                locații centrale din București.
+              </p>
+              <p i18n="@@aboutHistoryParagraph2">
+                Această evoluție a culminat cu proiecte de mare amploare care
+                transformă comunități, precum regenerarea urbană a fostei
+                platforme industriale FIRM RECOM și angajamentul față de
+                conservarea patrimoniului prin restaurarea clădirilor istorice.
+              </p>
+            </div>
+
+            <div class="card fade-in-up">
+              <h3 i18n="@@aboutLeadershipTitle">Conducere</h3>
+              <p i18n="@@aboutLeadershipParagraph1">
+                La baza succesului ICD GROUP se află o echipă de conducere
+                vizionară, implicată activ în operațiunile zilnice, asigurând o
+                abordare responsabilă și practică.
+              </p>
+              <p i18n="@@aboutLeadershipParagraph2">
+                Fiind o companie cu rădăcini puternice pe piața locală, GRUPUL
+                garantează un angajament pe termen lung față de parteneri și
+                clienți, transformând fiecare proiect într-o promisiune de
+                excelență.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Misiune și Viziune -->
+      <section class="section" style="background-color: var(--light-gray)">
+        <div class="container">
+          <div class="section-title">
+            <h2 i18n="@@aboutMissionVisionTitle">Misiune & Viziune</h2>
+          </div>
+
+          <div class="grid grid-2">
+            <div class="card fade-in-up">
+              <h3 i18n="@@aboutMissionTitle">Misiunea noastră</h3>
+              <p i18n="@@aboutMissionDescription">
+                Să dezvoltăm proiecte de referință, atât imobiliare cât și
+                energetice, care creează valoare economică, îmbunătățesc
+                calitatea vieții și contribuie la dezvoltarea durabilă a
+                României.
+              </p>
+            </div>
+
+            <div class="card fade-in-up">
+              <h3 i18n="@@aboutVisionTitle">Viziunea noastră</h3>
+              <p i18n="@@aboutVisionDescription">
+                Să fim un lider integrator pe piața românească, recunoscut
+                pentru livrarea de proiecte complexe și inovatoare și pentru
+                rolul de catalizator în tranziția energetică.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Realizări cheie -->
+      <section class="section">
+        <div class="container">
+          <div class="section-title">
+            <h2 i18n="@@aboutAchievementsTitle">Realizări cheie</h2>
+          </div>
+
+          <div class="grid grid-3">
+            <div class="card fade-in-up text-center">
+              <h3 i18n="@@aboutAchievementsYears">Peste 18 ani</h3>
+              <p i18n="@@aboutAchievementsExperience">
+                Experiență în dezvoltare imobiliară
+              </p>
+            </div>
+
+            <div class="card fade-in-up text-center">
+              <h3 i18n="@@aboutAchievementsInvestments">Peste 100M EUR</h3>
+              <p i18n="@@aboutAchievementsInvestmentDesc">
+                Investiții gestionate în domeniul imobiliar și energetic.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3 i18n="@@footerCompanyName">ICD GROUP</h3>
+          <p i18n="@@footerCompanyTagline">
+            Dezvoltăm comunități. Construim viitorul.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h4>
+            <a routerLink="/contact" i18n="@@footerContactLink">Contact</a>
+          </h4>
+          <h4>
+            <a
+              href="https://docs.google.com/document/d/1oCtRIs4Vv5bFFu3Q44Prhmxw0EmAeO3flP8Cld3Yb5k/edit?usp=sharing"
+              target="_blank"
+              rel="noopener"
+              i18n="@@footerGDPRLink"
+              >Informații GDPR</a
+            >
+          </h4>
+        </div>
+        <div class="footer-section">
+          <h4 i18n="@@footerDivisionsTitle">Divizii</h4>
+          <ul>
+            <li i18n="@@footerDivisionEnergy">Dezvoltare energetică</li>
+            <li i18n="@@footerDivisionRealEstate">Dezvoltare imobiliară</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p i18n="@@footerCopyright">
+          &copy; 2025 ICD GROUP. Toate drepturile rezervate.
+        </p>
+      </div>
+    </footer>
+  </div>
+</div>

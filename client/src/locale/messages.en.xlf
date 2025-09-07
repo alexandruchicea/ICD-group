@@ -1,0 +1,1489 @@
+<!DOCTYPE xliff [
+  <!ENTITY copy "entity-value">
+]>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="ro" target-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <!-- Home link -->
+      <trans-unit id="home" datatype="html">
+        <source>Acasă</source>
+        <target>Home</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/portfolio/portfolio.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+
+      <!-- About -->
+      <trans-unit id="about" datatype="html">
+        <source>Despre Noi</source>
+        <target>About Us</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/portfolio/portfolio.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+
+      <!-- Energy Solutions -->
+      <trans-unit id="energySolutions" datatype="html">
+        <source>Soluții Energetice</source>
+        <target>Energy Solutions</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/portfolio/portfolio.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+
+      <!-- Portfolio -->
+      <trans-unit id="portfolio" datatype="html">
+        <source>Portofoliu Imobiliar</source>
+        <target>Real Estate Portfolio</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/portfolio/portfolio.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+
+      <!-- Partnership -->
+      <trans-unit id="partnership" datatype="html">
+        <source>Parteneriat</source>
+        <target>Partnership</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/portfolio/portfolio.component.html</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+      </trans-unit>
+
+      <!-- Contact -->
+      <trans-unit id="contact" datatype="html">
+        <source>Contact</source>
+        <target>Contact</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/portfolio/portfolio.component.html</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+      </trans-unit>
+
+      <!-- Hero Title -->
+      <trans-unit id="heroTitle" datatype="html">
+        <source>Portofoliu Imobiliar</source>
+        <target>Real Estate Portfolio</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/portfolio/portfolio.component.html</context>
+          <context context-type="linenumber">95</context>
+        </context-group>
+      </trans-unit>
+
+      <!-- Hero Subtitle -->
+      <trans-unit id="heroSubtitle" datatype="html">
+        <source>Peste 18 Ani Modelând Orizontul Urban</source>
+        <target>Over 18 Years Shaping the Urban Skyline</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/portfolio/portfolio.component.html</context>
+          <context context-type="linenumber">96</context>
+        </context-group>
+      </trans-unit>
+
+      <!-- Hero Description -->
+      <trans-unit id="heroDescription" datatype="html">
+        <source>Filosofia noastră se bazează pe calitate, design funcțional și integrare armonioasă
+          în țesutul urban. Nu construim doar clădiri, ci creăm comunități și repere care aduc
+          plusvaloare zonelor în care activăm.</source>
+        <target>Our philosophy is based on quality, functional design, and harmonious integration
+          into the urban fabric. We don’t just build buildings, we create communities and landmarks
+          that add value to the areas where we operate.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/portfolio/portfolio.component.html</context>
+          <context context-type="linenumber">98–103</context>
+        </context-group>
+      </trans-unit>
+
+      <!-- Completed Projects Title -->
+      <trans-unit id="completedProjectsTitle" datatype="html">
+        <source>Proiecte Finalizate</source>
+        <target>Completed Projects</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/portfolio/portfolio.component.html</context>
+          <context context-type="linenumber">113</context>
+        </context-group>
+      </trans-unit>
+
+      <!-- Completed Projects Subtitle -->
+      <trans-unit id="completedProjectsSubtitle" datatype="html">
+        <source>Experiența noastră este demonstrată de un portofoliu diversificat de proiecte
+          finalizate cu succes.</source>
+        <target>Our experience is proven by a diverse portfolio of successfully completed projects.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/portfolio/portfolio.component.html</context>
+          <context context-type="linenumber">114–116</context>
+        </context-group>
+      </trans-unit>
+
+      <!-- Location -->
+      <trans-unit id="location" datatype="html">
+        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" />Locație:<x
+            id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;" /> <x
+            id="INTERPOLATION" equiv-text="{{ project.location }}" /></source>
+        <target><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" />Location:<x
+            id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;" /> <x
+            id="INTERPOLATION" equiv-text="{{ project.location }}" /></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/portfolio/portfolio.component.html</context>
+          <context context-type="linenumber">132–133</context>
+        </context-group>
+      </trans-unit>
+
+      <!-- Finished Year (ai deja, l-am păstrat ca exemplu) -->
+      <trans-unit id="finishedYear" datatype="html">
+        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" />An
+          Finalizare:<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;" /> <x
+            id="INTERPOLATION" equiv-text="{{ project.year }}" /></source>
+        <target><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" />Completion
+          Year:<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;" /> <x
+            id="INTERPOLATION" equiv-text="{{ project.year }}" /></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/portfolio/portfolio.component.html</context>
+          <context context-type="linenumber">134–135</context>
+        </context-group>
+      </trans-unit>
+
+      <!-- Type -->
+      <trans-unit id="type" datatype="html">
+        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" />Tipologie:<x
+            id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;" /> <x
+            id="INTERPOLATION" equiv-text="{{ project.type }}" /></source>
+        <target><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" />Type:<x
+            id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;" /> <x
+            id="INTERPOLATION" equiv-text="{{ project.type }}" /></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/portfolio/portfolio.component.html</context>
+          <context context-type="linenumber">136–137</context>
+        </context-group>
+      </trans-unit>
+
+      <!-- Heritage Title -->
+      <trans-unit id="heritageTitle" datatype="html">
+        <source>Patrimoniu și Restaurare</source>
+        <target>Heritage and Restoration</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/portfolio/portfolio.component.html</context>
+          <context context-type="linenumber">147</context>
+        </context-group>
+      </trans-unit>
+
+      <!-- Heritage Subtitle -->
+      <trans-unit id="heritageSubtitle" datatype="html">
+        <source>Angajamentul nostru depășește dezvoltarea de la zero</source>
+        <target>Our commitment goes beyond greenfield development</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/portfolio/portfolio.component.html</context>
+          <context context-type="linenumber">148</context>
+        </context-group>
+      </trans-unit>
+      <!-- Heritage Card 1 Title -->
+      <trans-unit id="heritageCard1Title" datatype="html">
+        <source>Protejarea Patrimoniului</source>
+        <target>Protecting Heritage</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/portfolio/portfolio.component.html</context>
+          <context context-type="linenumber">154</context>
+        </context-group>
+      </trans-unit>
+
+      <!-- Heritage Card 1 Text -->
+      <trans-unit id="heritageCard1Text" datatype="html">
+        <source>Am achiziționat o vilă istorică emblematică în centrul Bucureștiului, cu scopul de a
+          o restaura. Acest demers reflectă filosofia noastră de a proteja și valorifica patrimoniul
+          istoric și cultural al orașului pentru generațiile viitoare.</source>
+        <target>We acquired an emblematic historic villa in the center of Bucharest with the goal of
+          restoring it. This initiative reflects our philosophy of protecting and enhancing the
+          city’s historical and cultural heritage for future generations.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/portfolio/portfolio.component.html</context>
+          <context context-type="linenumber">155–160</context>
+        </context-group>
+      </trans-unit>
+
+      <!-- Heritage Card 2 Title -->
+      <trans-unit id="heritageCard2Title" datatype="html">
+        <source>Regenerarea Urbană</source>
+        <target>Urban Regeneration</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/portfolio/portfolio.component.html</context>
+          <context context-type="linenumber">164</context>
+        </context-group>
+      </trans-unit>
+
+      <!-- Heritage Card 2 Text -->
+      <trans-unit id="heritageCard2Text" datatype="html">
+        <source>Ne angajăm în proiecte de anvergură care transformă comunități, precum regenerarea
+          urbană a fostei platforme industriale FIRM RECOM și angajamentul pentru conservarea
+          patrimoniului prin restaurarea unor clădiri istorice.</source>
+        <target>We engage in large-scale projects that transform communities, such as the urban
+          regeneration of the former FIRM RECOM industrial site and our commitment to heritage
+          preservation through the restoration of historic buildings.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/portfolio/portfolio.component.html</context>
+          <context context-type="linenumber">165–170</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="footerCompanyName" datatype="html">
+        <source>ICD GROUP</source>
+        <target>ICD GROUP</target>
+      </trans-unit>
+
+      <trans-unit id="footerSlogan" datatype="html">
+        <source>Dezvoltăm Comunități. Generăm Viitor.</source>
+        <target>Developing Communities. Creating the Future.</target>
+      </trans-unit>
+
+      <trans-unit id="footerContact" datatype="html">
+        <source>Contact</source>
+        <target>Contact</target>
+      </trans-unit>
+
+      <trans-unit id="footerGDPR" datatype="html">
+        <source>Info GDPR</source>
+        <target>GDPR Info</target>
+      </trans-unit>
+
+      <trans-unit id="footerDivisions" datatype="html">
+        <source>Divizii</source>
+        <target>Divisions</target>
+      </trans-unit>
+
+      <trans-unit id="footerEnergy1" datatype="html">
+        <source>Dezvoltări Energetice</source>
+        <target>Energy Developments</target>
+      </trans-unit>
+
+      <trans-unit id="footerRealEstateDivision" datatype="html">
+        <source>Dezvoltări Imobiliare</source>
+        <target>Real Estate Developments</target>
+      </trans-unit>
+
+      <trans-unit id="footerRights" datatype="html">
+        <source>&amp;copy; 2025 ICD GROUP. Toate drepturile rezervate.</source>
+        <target>&amp;copy; 2025 ICD GROUP. All rights reserved.</target>
+      </trans-unit>
+      <!-- Navbar -->
+      <trans-unit id="partnershipHome" datatype="html">
+        <source>Acasă</source>
+        <target>Home</target>
+      </trans-unit>
+
+      <trans-unit id="partnershipAbout" datatype="html">
+        <source>Despre Noi</source>
+        <target>About Us</target>
+      </trans-unit>
+
+      <trans-unit id="partnershipEnergySolutions" datatype="html">
+        <source>Soluții Energetice</source>
+        <target>Energy Solutions</target>
+      </trans-unit>
+
+      <trans-unit id="partnershipPortfolio" datatype="html">
+        <source>Portofoliu Imobiliar</source>
+        <target>Real Estate Portfolio</target>
+      </trans-unit>
+
+      <trans-unit id="partnershipPage" datatype="html">
+        <source>Parteneriat</source>
+        <target>Partnership</target>
+      </trans-unit>
+
+      <trans-unit id="partnershipContact" datatype="html">
+        <source>Contact</source>
+        <target>Contact</target>
+      </trans-unit>
+
+      <!-- Hero Section -->
+      <trans-unit id="partnershipHeroTitle" datatype="html">
+        <source>Oportunități de Parteneriat</source>
+        <target>Partnership Opportunities</target>
+      </trans-unit>
+
+      <trans-unit id="partnershipHeroDescription" datatype="html">
+        <source>
+          Căutăm parteneri care împărtășesc viziunea și standardele noastre de excelență pentru a
+          capitaliza oportunitățile unice de pe piața românească.
+        </source>
+        <target>
+          We are looking for partners who share our vision and standards of excellence to capitalize
+          on unique opportunities in the Romanian market.
+        </target>
+      </trans-unit>
+
+      <!-- Partnership Opportunities Section -->
+      <trans-unit id="partnershipModelsTitle" datatype="html">
+        <source>Modele de Parteneriat</source>
+        <target>Partnership Models</target>
+      </trans-unit>
+
+      <trans-unit id="partnershipModelsSubtitle" datatype="html">
+        <source>
+          Construim împreună proiecte profitabile și durabile în sectorul energetic și imobiliar.
+        </source>
+        <target>
+          Together we build profitable and sustainable projects in the energy and real estate
+          sector.
+        </target>
+      </trans-unit>
+
+      <!-- Card: Investors -->
+      <trans-unit id="partnershipInvestorsTitle" datatype="html">
+        <source>Pentru Investitori</source>
+        <target>For Investors</target>
+      </trans-unit>
+
+      <trans-unit id="partnershipInvestorsText" datatype="html">
+        <source>
+          Vă invităm să descoperiți modelele noastre de parteneriat pentru a construi împreună
+          proiecte profitabile și durabile în sectorul energetic.
+        </source>
+        <target>
+          We invite you to explore our partnership models to jointly build profitable and
+          sustainable projects in the energy sector.
+        </target>
+      </trans-unit>
+
+      <trans-unit id="partnershipInvestorsLi1" datatype="html">
+        <source>Investiții în parcuri fotovoltaice</source>
+        <target>Investments in photovoltaic parks</target>
+      </trans-unit>
+      <trans-unit id="partnershipInvestorsLi2" datatype="html">
+        <source>Proiecte BESS stand alone</source>
+        <target>Standalone BESS projects</target>
+      </trans-unit>
+      <trans-unit id="partnershipInvestorsLi3" datatype="html">
+        <source>Dezvoltări imobiliare premium</source>
+        <target>Premium real estate developments</target>
+      </trans-unit>
+      <trans-unit id="partnershipInvestorsLi4" datatype="html">
+        <source>ROE excelent</source>
+        <target>Excellent ROE</target>
+      </trans-unit>
+
+      <!-- Card: Landowners -->
+      <trans-unit id="partnershipLandownersTitle" datatype="html">
+        <source>Pentru Proprietari de Terenuri</source>
+        <target>For Landowners</target>
+      </trans-unit>
+
+      <trans-unit id="partnershipLandownersText" datatype="html">
+        <source>
+          Dețineți un teren pretabil pentru un parc fotovoltaic? Contactați-ne pentru a explora
+          opțiuni flexibile de colaborare.
+        </source>
+        <target>
+          Do you own land suitable for a photovoltaic park? Contact us to explore flexible
+          collaboration options.
+        </target>
+      </trans-unit>
+
+      <trans-unit id="partnershipLandownersLi1" datatype="html">
+        <source>Evaluare gratuită a terenului</source>
+        <target>Free land evaluation</target>
+      </trans-unit>
+      <trans-unit id="partnershipLandownersLi2" datatype="html">
+        <source>Opțiuni flexibile de colaborare</source>
+        <target>Flexible collaboration options</target>
+      </trans-unit>
+      <trans-unit id="partnershipLandownersLi3" datatype="html">
+        <source>Dezvoltare la cheie</source>
+        <target>Turnkey development</target>
+      </trans-unit>
+      <trans-unit id="partnershipLandownersLi4" datatype="html">
+        <source>Beneficii pe termen lung</source>
+        <target>Long-term benefits</target>
+      </trans-unit>
+
+      <!-- Card: Industry Partners -->
+      <trans-unit id="partnershipIndustryPartnersTitle" datatype="html">
+        <source>Pentru Parteneri Industriali</source>
+        <target>For Industrial Partners</target>
+      </trans-unit>
+
+      <trans-unit id="partnershipIndustryPartnersText" datatype="html">
+        <source>
+          Suntem deschiși la colaborări cu furnizori de tehnologie de top și companii de construcții
+          specializate.
+        </source>
+        <target>
+          We are open to collaborations with top technology providers and specialized construction
+          companies.
+        </target>
+      </trans-unit>
+
+      <trans-unit id="partnershipIndustryPartnersLi1" datatype="html">
+        <source>Furnizori de tehnologie</source>
+        <target>Technology providers</target>
+      </trans-unit>
+      <trans-unit id="partnershipIndustryPartnersLi2" datatype="html">
+        <source>Companii de construcții</source>
+        <target>Construction companies</target>
+      </trans-unit>
+      <trans-unit id="partnershipIndustryPartnersLi3" datatype="html">
+        <source>Expertiză tehnică</source>
+        <target>Technical expertise</target>
+      </trans-unit>
+      <trans-unit id="partnershipIndustryPartnersLi4" datatype="html">
+        <source>Proiecte la scară mare</source>
+        <target>Large-scale projects</target>
+      </trans-unit>
+
+      <!-- Why Partner Section -->
+      <trans-unit id="partnershipWhyPartnerTitle" datatype="html">
+        <source>De ce să faceți un parteneriat cu noi?</source>
+        <target>Why Partner With Us?</target>
+      </trans-unit>
+
+      <trans-unit id="partnershipProvenExperienceTitle" datatype="html">
+        <source>Experiență Dovedită</source>
+        <target>Proven Experience</target>
+      </trans-unit>
+      <trans-unit id="partnershipProvenExperienceText" datatype="html">
+        <source>
+          Peste 18 ani de experiență în dezvoltare imobiliară și o echipă cu expertiză în proiecte
+          energetice complexe. Am gestionat investiții de peste 100 de milioane de euro cu succes.
+        </source>
+        <target>
+          Over 18 years of experience in real estate development and a team with expertise in
+          complex energy projects. We have successfully managed investments over 100 million euros.
+        </target>
+      </trans-unit>
+
+      <trans-unit id="partnershipUniqueOpportunitiesTitle" datatype="html">
+        <source>Oportunități Unice</source>
+        <target>Unique Opportunities</target>
+      </trans-unit>
+      <trans-unit id="partnershipUniqueOpportunitiesText" datatype="html">
+        <source>
+          Capitalizăm pe oportunitățile unice de pe piața românească, inclusiv eliminarea dublei
+          taxări pentru energia stocată și fondurile europene disponibile pentru proiecte verzi.
+        </source>
+        <target>
+          We capitalize on unique opportunities in the Romanian market, including removal of double
+          taxation for stored energy and available EU funds for green projects.
+        </target>
+      </trans-unit>
+
+      <trans-unit id="partnershipIntegratedApproachTitle" datatype="html">
+        <source>Abordare Integrată</source>
+        <target>Integrated Approach</target>
+      </trans-unit>
+      <trans-unit id="partnershipIntegratedApproachText" datatype="html">
+        <source>
+          Oferim soluții complete de la concept la implementare, cu expertiză atât în sectorul
+          imobiliar cât și în cel energetic, oferind diversificare și stabilitate investițională.
+        </source>
+        <target>
+          We provide complete solutions from concept to implementation, with expertise in both real
+          estate and energy sectors, offering diversification and investment stability.
+        </target>
+      </trans-unit>
+
+      <trans-unit id="partnershipLongTermCommitmentTitle" datatype="html">
+        <source>Angajament pe Termen Lung</source>
+        <target>Long-Term Commitment</target>
+      </trans-unit>
+      <trans-unit id="partnershipLongTermCommitmentText" datatype="html">
+        <source>
+          Construim relații de încredere cu partenerii noștri, asigurând un angajament pe termen
+          lung și o abordare transparentă în toate proiectele noastre.
+        </source>
+        <target>
+          We build trust-based relationships with our partners, ensuring long-term commitment and
+          transparent approach in all our projects.
+        </target>
+      </trans-unit>
+
+      <!-- CTA Section -->
+      <trans-unit id="partnershipCtaTitle" datatype="html">
+        <source>Hai Să Discutăm</source>
+        <target>Let's Talk</target>
+      </trans-unit>
+      <trans-unit id="partnershipCtaText" datatype="html">
+        <source>
+          Suntem aici pentru a explora împreună oportunitățile de parteneriat și pentru a construi
+          viitorul României.
+        </source>
+        <target>
+          We are here to explore partnership opportunities together and to build Romania's future.
+        </target>
+      </trans-unit>
+      <trans-unit id="partnershipCtaButton" datatype="html">
+        <source>Contactați-ne Acum</source>
+        <target>Contact Us Now</target>
+      </trans-unit>
+
+      <!-- Footer Section -->
+      <trans-unit id="partnershipFooterCompanyName" datatype="html">
+        <source>ICD GROUP</source>
+        <target>ICD GROUP</target>
+      </trans-unit>
+      <trans-unit id="partnershipFooterSlogan" datatype="html">
+        <source>Dezvoltăm Comunități. Generăm Viitor.</source>
+        <target>Developing Communities. Creating the Future.</target>
+      </trans-unit>
+      <trans-unit id="partnershipFooterContact" datatype="html">
+        <source>Contact</source>
+        <target>Contact</target>
+      </trans-unit>
+      <trans-unit id="partnershipFooterGDPR" datatype="html">
+        <source>Info GDPR</source>
+        <target>GDPR Info</target>
+      </trans-unit>
+      <trans-unit id="partnershipFooterDivisions" datatype="html">
+        <source>Divizii</source>
+        <target>Divisions</target>
+      </trans-unit>
+      <trans-unit id="partnershipFooterEnergyDivision" datatype="html">
+        <source>Dezvoltări Energetice</source>
+        <target>Energy Developments</target>
+      </trans-unit>
+      <trans-unit id="partnershipFooterRealEstateDivision" datatype="html">
+        <source>Dezvoltări Imobiliare</source>
+        <target>Real Estate Developments</target>
+      </trans-unit>
+      <trans-unit id="partnershipFooterRights" datatype="html">
+        <source>&amp;copy; 2025 ICD GROUP. Toate drepturile rezervate.</source>
+        <target>&amp;copy; 2025 ICD GROUP. All rights reserved.</target>
+      </trans-unit>
+      <!-- Navbar -->
+      <trans-unit id="homeNavHome" datatype="html">
+        <source>Acasă</source>
+        <target>Home</target>
+      </trans-unit>
+      <trans-unit id="homeNavAbout" datatype="html">
+        <source>Despre Noi</source>
+        <target>About Us</target>
+      </trans-unit>
+      <trans-unit id="homeNavEnergySolutions" datatype="html">
+        <source>Soluții Energetice</source>
+        <target>Energy Solutions</target>
+      </trans-unit>
+      <trans-unit id="homeNavPortfolio" datatype="html">
+        <source>Portofoliu Imobiliar</source>
+        <target>Real Estate Portfolio</target>
+      </trans-unit>
+      <trans-unit id="homeNavPartnership" datatype="html">
+        <source>Parteneriat</source>
+        <target>Partnership</target>
+      </trans-unit>
+      <trans-unit id="homeNavContact" datatype="html">
+        <source>Contact</source>
+        <target>Contact</target>
+      </trans-unit>
+
+      <!-- Hero Section -->
+      <trans-unit id="homeHeroTitle" datatype="html">
+        <source>ICD GROUP</source>
+        <target>ICD GROUP</target>
+      </trans-unit>
+      <trans-unit id="homeHeroSubtitle" datatype="html">
+        <source>Construim la o scară care contează</source>
+        <target>We Build at a Meaningful Scale</target>
+      </trans-unit>
+      <trans-unit id="homeHeroText" datatype="html">
+        <source>
+          Dezvoltăm parcuri fotovoltaice și sisteme de stocare a energiei care
+          asigură independență și stabilitate energetică. Aceeași viziune
+          pentru un viitor durabil o aducem apoi la scara cea mai importantă:
+          în comunitățile rezidențiale pe care le creăm, unde acest viitor
+          devine „acasă”. De la ansambluri rezidențiale moderne la parcuri
+          fotovoltaice si sisteme de stocare a energiei in baterii,
+          angajamentul nostru este pentru calitate, eficiență, un viitor mai
+          verde și mai curat pentru copii noștri.
+        </source>
+        <target>
+          We develop photovoltaic parks and energy storage systems that ensure
+          energy independence and stability. We bring the same vision for a
+          sustainable future to the most important scale: the residential
+          communities we create, where this future becomes "home." From modern
+          residential complexes to photovoltaic parks and battery energy storage
+          systems, our commitment is to quality, efficiency, and a greener, cleaner
+          future for our children.
+        </target>
+      </trans-unit>
+      <trans-unit id="homeHeroBtnEnergy" datatype="html">
+        <source>Descoperiți Soluțiile Energetice</source>
+        <target>Discover Energy Solutions</target>
+      </trans-unit>
+      <trans-unit id="homeHeroBtnPortfolio" datatype="html">
+        <source>Explorați Portofoliul Imobiliar</source>
+        <target>Explore Real Estate Portfolio</target>
+      </trans-unit>
+
+      <!-- Stats Section -->
+      <trans-unit id="homeStatsExperienceValue" datatype="html">
+        <source>18+</source>
+        <target>18+</target>
+      </trans-unit>
+      <trans-unit id="homeStatsExperienceText" datatype="html">
+        <source>Ani de Experiență</source>
+        <target>Years of Experience</target>
+      </trans-unit>
+      <trans-unit id="homeStatsInvestmentValue" datatype="html">
+        <source>100M+</source>
+        <target>100M+</target>
+      </trans-unit>
+      <trans-unit id="homeStatsInvestmentText" datatype="html">
+        <source>Euro Investiții Gestionate</source>
+        <target>Managed Investment (EUR)</target>
+      </trans-unit>
+      <trans-unit id="homeStatsProjectsValue" datatype="html">
+        <source>100%</source>
+        <target>100%</target>
+      </trans-unit>
+      <trans-unit id="homeStatsProjectsText" datatype="html">
+        <source>Proiecte Finalizate cu Succes</source>
+        <target>Projects Successfully Completed</target>
+      </trans-unit>
+      <trans-unit id="homeStatsDivisionsValue" datatype="html">
+        <source>2</source>
+        <target>2</target>
+      </trans-unit>
+      <trans-unit id="homeStatsDivisionsText" datatype="html">
+        <source>Divizii Strategice</source>
+        <target>Strategic Divisions</target>
+      </trans-unit>
+
+      <!-- Divisions Section -->
+      <trans-unit id="homeDivisionsTitle" datatype="html">
+        <source>Diviziile Noastre Strategice</source>
+        <target>Our Strategic Divisions</target>
+      </trans-unit>
+      <trans-unit id="homeDivisionsText" datatype="html">
+        <source>
+          Cu o experiență solidă în dezvoltare imobiliară și o viziune clară
+          pentru energie regenerabilă, transformăm peisajul României,
+          proiect cu proiect.
+        </source>
+        <target>
+          With solid experience in real estate development and a clear vision for
+          renewable energy, we are transforming Romania’s landscape, project by
+          project.
+        </target>
+      </trans-unit>
+      <trans-unit id="homeEnergyTitle" datatype="html">
+        <source>Dezvoltări Energetice</source>
+        <target>Energy Developments</target>
+      </trans-unit>
+      <trans-unit id="homeEnergyText" datatype="html">
+        <source>
+          Dezvoltăm parcuri fotovoltaice la cheie și implementăm sisteme
+          avansate de stocare a energiei (BESS), contribuind la
+          securitatea energetică a României într-un context de piață unic.
+        </source>
+        <target>
+          We develop turnkey photovoltaic parks and implement advanced energy
+          storage systems (BESS), contributing to Romania’s energy security in a
+          unique market context.
+        </target>
+      </trans-unit>
+      <trans-unit id="homeEnergyBtn" datatype="html">
+        <source>Descoperiți Soluțiile Energetice</source>
+        <target>Discover Energy Solutions</target>
+      </trans-unit>
+      <trans-unit id="homeRealEstateTitle" datatype="html">
+        <source>Dezvoltări Imobiliare</source>
+        <target>Real Estate Developments</target>
+      </trans-unit>
+      <trans-unit id="homeRealEstateText" datatype="html">
+        <source>
+          De peste 18 ani, creăm spații de locuit excepționale și
+          regenerăm zone urbane. Portofoliul nostru, cu investiții
+          gestionate de peste 100 de milioane de euro, este garanția
+          calității.
+        </source>
+        <target>
+          For over 18 years, we have been creating exceptional living spaces and
+          regenerating urban areas. Our portfolio, with managed investments
+          exceeding 100 million euros, is a guarantee of quality.
+        </target>
+      </trans-unit>
+      <trans-unit id="homeRealEstateBtn" datatype="html">
+        <source>Explorați Portofoliul Imobiliar</source>
+        <target>Explore Real Estate Portfolio</target>
+      </trans-unit>
+
+      <!-- Commitment Section -->
+      <trans-unit id="homeCommitmentTitle" datatype="html">
+        <source>Angajamentul Nostru</source>
+        <target>Our Commitment</target>
+      </trans-unit>
+      <trans-unit id="homeCommitmentInnovationTitle" datatype="html">
+        <source>Inovație</source>
+        <target>Innovation</target>
+      </trans-unit>
+      <trans-unit id="homeCommitmentInnovationText" datatype="html">
+        <source>
+          Anticipăm tendințele pieței și integrăm cele mai noi tehnologii,
+          de la soluții BESS pentru rețeaua energetică la concepte de
+          regenerare urbană în zone strategice.
+        </source>
+        <target>
+          We anticipate market trends and integrate the latest technologies,
+          from BESS solutions for the power grid to urban regeneration concepts in
+          strategic areas.
+        </target>
+      </trans-unit>
+      <trans-unit id="homeCommitmentSustainabilityTitle" datatype="html">
+        <source>Sustenabilitate</source>
+        <target>Sustainability</target>
+      </trans-unit>
+      <trans-unit id="homeCommitmentSustainabilityText" datatype="html">
+        <source>
+          Fiecare proiect este conceput cu un profund respect pentru mediu
+          și pentru moștenirea lăsată generațiilor viitoare, inclusiv prin
+          protejarea patrimoniului cultural.
+        </source>
+        <target>
+          Each project is designed with deep respect for the environment and the
+          legacy for future generations, including the protection of cultural
+          heritage.
+        </target>
+      </trans-unit>
+      <trans-unit id="homeCommitmentIntegrityTitle" datatype="html">
+        <source>Integritate</source>
+        <target>Integrity</target>
+      </trans-unit>
+      <trans-unit id="homeCommitmentIntegrityText" datatype="html">
+        <source>
+          Construim pe o fundație de încredere. Reputația noastră este cel
+          mai de preț activ, reflectat în fiecare parteneriat și proiect
+          finalizat.
+        </source>
+        <target>
+          We build on a foundation of trust. Our reputation is our most valuable
+          asset, reflected in every partnership and completed project.
+        </target>
+      </trans-unit>
+
+      <!-- Footer Section -->
+      <trans-unit id="homeFooterCompanyName" datatype="html">
+        <source>ICD GROUP</source>
+        <target>ICD GROUP</target>
+      </trans-unit>
+      <trans-unit id="homeFooterSlogan" datatype="html">
+        <source>Dezvoltăm Comunități. Generăm Viitor.</source>
+        <target>We Develop Communities. We Generate the Future.</target>
+      </trans-unit>
+      <trans-unit id="homeFooterContact" datatype="html">
+        <source>Contact</source>
+        <target>Contact</target>
+      </trans-unit>
+      <trans-unit id="homeFooterGDPR" datatype="html">
+        <source>Info GDPR</source>
+        <target>GDPR Info</target>
+      </trans-unit>
+      <trans-unit id="homeFooterDivisions" datatype="html">
+        <source>Divizii</source>
+        <target>Divisions</target>
+      </trans-unit>
+      <trans-unit id="homeFooterEnergyDivision" datatype="html">
+        <source>Dezvoltări Energetice</source>
+        <target>Energy Developments</target>
+      </trans-unit>
+      <trans-unit id="homeFooterRealEstateDivision" datatype="html">
+        <source>Dezvoltări Imobiliare</source>
+        <target>Real Estate Developments</target>
+      </trans-unit>
+      <trans-unit id="homeFooterRights" datatype="html">
+        <source>&copy; 2025 ICD GROUP. Toate drepturile rezervate.</source>
+        <target>&copy; 2025 ICD GROUP. All rights reserved.</target>
+      </trans-unit>
+      <trans-unit id="energyHome" datatype="html">
+        <source>Acasă</source>
+        <target>Home</target>
+      </trans-unit>
+
+      <trans-unit id="energyAbout" datatype="html">
+        <source>Despre Noi</source>
+        <target>About Us</target>
+      </trans-unit>
+
+      <trans-unit id="energyPage" datatype="html">
+        <source>Soluții Energetice</source>
+        <target>Energy Solutions</target>
+      </trans-unit>
+
+      <trans-unit id="energyPortfolio" datatype="html">
+        <source>Portofoliu Imobiliar</source>
+        <target>Real Estate Portfolio</target>
+      </trans-unit>
+
+      <trans-unit id="energyPartnership" datatype="html">
+        <source>Parteneriat</source>
+        <target>Partnership</target>
+      </trans-unit>
+
+      <trans-unit id="energyContact" datatype="html">
+        <source>Contact</source>
+        <target>Contact</target>
+      </trans-unit>
+
+      <trans-unit id="energyHeroTitle" datatype="html">
+        <source>Soluții Energetice</source>
+        <target>Energy Solutions</target>
+      </trans-unit>
+
+      <trans-unit id="energyHeroSubtitle" datatype="html">
+        <source>Investim în Independența Energetică a României</source>
+        <target>We Invest in Romania's Energy Independence</target>
+      </trans-unit>
+
+      <trans-unit id="energyHeroText" datatype="html">
+        <source>
+          Contribuim la coloana vertebrală a sistemului energetic național.
+          Dezvoltăm proiecte de stocare a energiei (BESS) de importanță strategică, integrate direct
+          în rețelele de înaltă și foarte înaltă tensiune (110kV și 400kV). Cu un portofoliu în
+          dezvoltare ce depășește 1,5 GWh, consolidăm un viitor energetic stabil și sigur pentru
+          România.
+        </source>
+        <target>
+          We contribute to the backbone of the national energy system. We develop strategic energy
+          storage projects (BESS) integrated directly into high and extra-high voltage grids (110kV
+          and 400kV). With a developing portfolio exceeding 1.5 GWh, we ensure a stable and secure
+          energy future for Romania.
+        </target>
+      </trans-unit>
+
+      <trans-unit id="energyOverviewTitle" datatype="html">
+        <source>Oportunitatea Unică în România</source>
+        <target>Unique Opportunity in Romania</target>
+      </trans-unit>
+
+      <trans-unit id="energyOverviewText" datatype="html">
+        <source>
+          Ne angajăm în acest sector într-un moment de transformare istorică pentru România,
+          susținut de ținte naționale ambițioase și fonduri europene masive. Expansiunea rapidă a
+          surselor regenerabile creează o nevoie critică de soluții de stocare, iar noi suntem
+          pregătiți să construim infrastructura necesară având în desfășurare multiple proiecte BESS
+          stand alone.
+        </source>
+        <target>
+          We engage in this sector during a historic transformation moment for Romania, supported by
+          ambitious national targets and massive EU funds. The rapid expansion of renewable sources
+          creates a critical need for storage solutions, and we are ready to build the necessary
+          infrastructure with multiple stand-alone BESS projects underway.
+        </target>
+      </trans-unit>
+
+      <trans-unit id="energyPvTitle" datatype="html">
+        <source>Parcuri Fotovoltaice – Investiții Inteligente</source>
+        <target>Photovoltaic Parks – Smart Investments</target>
+      </trans-unit>
+
+      <trans-unit id="energyPvText" datatype="html">
+        <source>
+          Oferim soluții complete "la cheie" pentru dezvoltarea parcurilor fotovoltaice, de la
+          identificarea terenului la racordarea la rețea. Expertiza noastră în management de proiect
+          garantează o execuție eficientă.
+        </source>
+        <target>
+          We offer complete "turnkey" solutions for the development of photovoltaic parks, from site
+          identification to grid connection. Our project management expertise guarantees efficient
+          execution.
+        </target>
+      </trans-unit>
+
+      <trans-unit id="energyPvCard1Title" datatype="html">
+        <source>Rentabilitate Superioară</source>
+        <target>Superior Profitability</target>
+      </trans-unit>
+
+      <trans-unit id="energyPvCard1Text" datatype="html">
+        <source>Investițiile în fotovoltaice pot oferi o rentabilitate superioară celor imobiliare.</source>
+        <target>Investments in photovoltaics can offer higher returns than real estate.</target>
+      </trans-unit>
+
+      <trans-unit id="energyPvCard2Title" datatype="html">
+        <source>Implementare Rapidă</source>
+        <target>Fast Implementation</target>
+      </trans-unit>
+
+      <trans-unit id="energyPvCard2Text" datatype="html">
+        <source>Cu echipa noastră dedicată putem implementa rapid orice proiect energetic.</source>
+        <target>With our dedicated team, we can quickly implement any energy project.</target>
+      </trans-unit>
+
+      <trans-unit id="energyPvCard3Title" datatype="html">
+        <source>Soluții de Finanțare</source>
+        <target>Financing Solutions</target>
+      </trans-unit>
+
+      <trans-unit id="energyPvCard3Text" datatype="html">
+        <source>Putem asigura soluții de finanțare atât bancare cât și private astfel încât ROE să
+          fie excelent.</source>
+        <target>We can provide both bank and private financing solutions to ensure excellent ROE.</target>
+      </trans-unit>
+
+      <trans-unit id="energyBessTitle" datatype="html">
+        <source>Sisteme de Stocare a Energiei (BESS) – Cheia Rezilienței</source>
+        <target>Energy Storage Systems (BESS) – Key to Resilience</target>
+      </trans-unit>
+
+      <trans-unit id="energyBessText" datatype="html">
+        <source>Sistemele de Stocare a Energiei în Baterii (BESS) sunt critice pentru tranziția
+          verde. Ele stabilizează rețeaua, absorb surplusul de energie și îl eliberează la nevoie,
+          prevenind penele de curent.</source>
+        <target>Battery Energy Storage Systems (BESS) are critical for the green transition. They
+          stabilize the grid, absorb energy surplus, and release it when needed, preventing power
+          outages.</target>
+      </trans-unit>
+
+      <trans-unit id="energyBessCard1Title" datatype="html">
+        <source>Oportunitatea Unică în România</source>
+        <target>Unique Opportunity in Romania</target>
+      </trans-unit>
+
+      <trans-unit id="energyBessCard1Text" datatype="html">
+        <source>
+          Recent, ANRE a eliminat dubla taxare pentru energia stocată, o barieră majoră pentru
+          investitori. Această decizie a trimis un semnal clar de sprijin pentru stocarea energiei,
+          iar ICD GROUP este pregătit să valorifice această oportunitate.
+        </source>
+        <target>
+          Recently, ANRE eliminated double taxation for stored energy, a major barrier for
+          investors. This decision sent a clear signal of support for energy storage, and ICD GROUP
+          is ready to seize this opportunity.
+        </target>
+      </trans-unit>
+
+      <trans-unit id="energyBessCard2Title" datatype="html">
+        <source>Soluțiile BESS de la ICD GROUP</source>
+        <target>BESS Solutions from ICD GROUP</target>
+      </trans-unit>
+
+      <trans-unit id="energyBessCard2Li1" datatype="html">
+        <source><strong>Proiecte la Scară Largă:</strong> Esențiale pentru echilibrarea Sistemului
+          Energetic Național. ICD dezvoltă proiecte medii și mari de stocare.</source>
+        <target><strong>Large Scale Projects:</strong> Essential for balancing the National Energy
+          System. ICD develops medium and large storage projects.</target>
+      </trans-unit>
+
+      <trans-unit id="energyBessCard2Li2" datatype="html">
+        <source><strong>Sisteme Integrate PV+BESS:</strong> Maximizăm eficiența și rentabilitatea
+          investiției.</source>
+        <target><strong>Integrated PV+BESS Systems:</strong> We maximize efficiency and investment
+          returns.</target>
+      </trans-unit>
+
+      <trans-unit id="energyProjectsTitle" datatype="html">
+        <source>Proiecte Energetice în Desfășurare</source>
+        <target>Ongoing Energy Projects</target>
+      </trans-unit>
+
+      <trans-unit id="energyProjectsText" datatype="html">
+        <source>Avem multiple proiecte BESS stand alone în desfășurare, contribuind la securitatea
+          energetică a României.</source>
+        <target>We have multiple stand-alone BESS projects underway, contributing to Romania’s
+          energy security.</target>
+      </trans-unit>
+
+      <trans-unit id="energyProjectsCard1Title" datatype="html">
+        <source>Proiecte BESS Stand Alone</source>
+        <target>Stand-Alone BESS Projects</target>
+      </trans-unit>
+
+      <trans-unit id="energyProjectsCard1Text" datatype="html">
+        <source>Dezvoltăm sisteme de stocare independente care pot fi integrate în rețeaua națională
+          pentru a asigura stabilitatea și eficiența sistemului energetic.</source>
+        <target>We develop independent storage systems that can be integrated into the national grid
+          to ensure system stability and efficiency.</target>
+      </trans-unit>
+
+      <trans-unit id="energyProjectsCard2Title" datatype="html">
+        <source>Integrare în Rețeaua Națională</source>
+        <target>Integration into the National Grid</target>
+      </trans-unit>
+
+      <trans-unit id="energyProjectsCard2Text" datatype="html">
+        <source>Proiectele noastre sunt concepute pentru a se integra perfect în infrastructura
+          energetică existentă, contribuind la modernizarea și eficientizarea sistemului.</source>
+        <target>Our projects are designed to integrate seamlessly into the existing energy
+          infrastructure, contributing to system modernization and efficiency.</target>
+      </trans-unit>
+
+      <trans-unit id="energyFooterCompanyName" datatype="html">
+        <source>ICD GROUP</source>
+        <target>ICD GROUP</target>
+      </trans-unit>
+
+      <trans-unit id="energyFooterSlogan" datatype="html">
+        <source>Dezvoltăm Comunități. Generăm Viitor.</source>
+        <target>We Build Communities. We Create the Future.</target>
+      </trans-unit>
+
+      <trans-unit id="energyFooterContact" datatype="html">
+        <source>Contact</source>
+        <target>Contact</target>
+      </trans-unit>
+
+      <trans-unit id="energyFooterGDPR" datatype="html">
+        <source>Info GDPR</source>
+        <target>GDPR Info</target>
+      </trans-unit>
+
+      <trans-unit id="energyFooterDivisions" datatype="html">
+        <source>Divizii</source>
+        <target>Divisions</target>
+      </trans-unit>
+
+      <trans-unit id="energyFooterEnergyDivision" datatype="html">
+        <source>Dezvoltări Energetice</source>
+        <target>Energy Development</target>
+      </trans-unit>
+
+      <trans-unit id="energyFooterRealEstateDivision" datatype="html">
+        <source>Dezvoltări Imobiliare</source>
+        <target>Real Estate Development</target>
+      </trans-unit>
+
+      <trans-unit id="energyFooterRights" datatype="html">
+        <source>&copy; 2025 ICD GROUP. Toate drepturile rezervate.</source>
+        <target>&copy; 2025 ICD GROUP. All rights reserved.</target>
+      </trans-unit>
+      <trans-unit id="contactHome" datatype="html">
+        <source>Acasă</source>
+        <target>Home</target>
+      </trans-unit>
+
+      <trans-unit id="contactAbout" datatype="html">
+        <source>Despre Noi</source>
+        <target>About Us</target>
+      </trans-unit>
+
+      <trans-unit id="contactEnergySolutions" datatype="html">
+        <source>Soluții Energetice</source>
+        <target>Energy Solutions</target>
+      </trans-unit>
+
+      <trans-unit id="contactPortfolio" datatype="html">
+        <source>Portofoliu Imobiliar</source>
+        <target>Real Estate Portfolio</target>
+      </trans-unit>
+
+      <trans-unit id="contactPartnership" datatype="html">
+        <source>Parteneriat</source>
+        <target>Partnership</target>
+      </trans-unit>
+
+      <trans-unit id="contactPage" datatype="html">
+        <source>Contact</source>
+        <target>Contact</target>
+      </trans-unit>
+
+      <trans-unit id="contactHeroTitle" datatype="html">
+        <source>Contact</source>
+        <target>Contact</target>
+      </trans-unit>
+
+      <trans-unit id="contactHeroDescription" datatype="html">
+        <source>Suntem la dispoziția dumneavoastră pentru a discuta despre proiectele noastre și
+          despre cum putem colabora.</source>
+        <target>We are available to discuss our projects and explore collaboration opportunities.</target>
+      </trans-unit>
+
+      <trans-unit id="contactInfoTitle" datatype="html">
+        <source>Informații de Contact</source>
+        <target>Contact Information</target>
+      </trans-unit>
+
+      <trans-unit id="contactAddressTitle" datatype="html">
+        <source>Adresa</source>
+        <target>Address</target>
+      </trans-unit>
+
+      <trans-unit id="contactAddressText" datatype="html">
+        <source>Str Petru Rares 5-9 sc 2 ap 7<br />Sector 1, Bucuresti</source>
+        <target>5-9 Petru Rares St., Building 2, Apartment 7<br />Sector 1, Bucharest</target>
+      </trans-unit>
+
+      <trans-unit id="contactPhoneTitle" datatype="html">
+        <source>Telefon</source>
+        <target>Phone</target>
+      </trans-unit>
+
+      <trans-unit id="contactPhoneText1" datatype="html">
+        <source>031.40.555.44</source>
+        <target>031.40.555.44</target>
+      </trans-unit>
+
+      <trans-unit id="contactPhoneText2" datatype="html">
+        <source>031.40.555.43</source>
+        <target>031.40.555.43</target>
+      </trans-unit>
+
+      <trans-unit id="contactProgramTitle" datatype="html">
+        <source>Program</source>
+        <target>Schedule</target>
+      </trans-unit>
+
+      <trans-unit id="contactProgramText" datatype="html">
+        <source>Luni - Vineri: 9:00 - 18:00</source>
+        <target>Monday - Friday: 9:00 AM - 6:00 PM</target>
+      </trans-unit>
+
+      <trans-unit id="contactDivisionsTitle" datatype="html">
+        <source>Divizii</source>
+        <target>Divisions</target>
+      </trans-unit>
+
+      <trans-unit id="contactDivisionEnergy" datatype="html">
+        <source>Dezvoltări Energetice</source>
+        <target>Energy Developments</target>
+      </trans-unit>
+
+      <trans-unit id="contactDivisionRealEstate" datatype="html">
+        <source>Dezvoltări Imobiliare</source>
+        <target>Real Estate Developments</target>
+      </trans-unit>
+
+      <trans-unit id="contactFormTitle" datatype="html">
+        <source>Trimiteți-ne un Mesaj</source>
+        <target>Send Us a Message</target>
+      </trans-unit>
+
+      <trans-unit id="contactFormSubtitle" datatype="html">
+        <source>Completați formularul de mai jos și vă vom contacta în cel mai scurt timp.</source>
+        <target>Fill out the form below and we will contact you shortly.</target>
+      </trans-unit>
+
+      <trans-unit id="contactFormNameLabel" datatype="html">
+        <source>Nume complet *</source>
+        <target>Full Name *</target>
+      </trans-unit>
+
+      <trans-unit id="contactFormEmailLabel" datatype="html">
+        <source>Email *</source>
+        <target>Email *</target>
+      </trans-unit>
+
+      <trans-unit id="contactFormPhoneLabel" datatype="html">
+        <source>Telefon</source>
+        <target>Phone</target>
+      </trans-unit>
+
+      <trans-unit id="contactFormCompanyLabel" datatype="html">
+        <source>Companie</source>
+        <target>Company</target>
+      </trans-unit>
+
+      <trans-unit id="contactFormMessageLabel" datatype="html">
+        <source>Mesaj *</source>
+        <target>Message *</target>
+      </trans-unit>
+
+      <trans-unit id="contactRecaptchaError" datatype="html">
+        <source>Vă rugăm să completați testul reCAPTCHA.</source>
+        <target>Please complete the reCAPTCHA test.</target>
+      </trans-unit>
+
+      <trans-unit id="contactSuccessMessage" datatype="html">
+        <source>Mesajul vostru a fost trimis! Veti fi contactat curand.</source>
+        <target>Your message has been sent! You will be contacted shortly.</target>
+      </trans-unit>
+
+      <trans-unit id="contactErrorMessage" datatype="html">
+        <source>{{ submitError }} Completeaza toate campurile obligatorii.</source>
+        <target>{{ submitError }} Please fill in all required fields.</target>
+      </trans-unit>
+
+      <trans-unit id="contactButtonPending" datatype="html">
+        <source>Se trimite...</source>
+        <target>Sending...</target>
+      </trans-unit>
+
+      <trans-unit id="contactRecaptchaError" datatype="html">
+        <source>Vă rugăm să completați testul reCAPTCHA.</source>
+        <target>Please complete the reCAPTCHA test.</target>
+      </trans-unit>
+
+      <trans-unit id="contactButtonError" datatype="html">
+        <source>Reîncercați</source>
+        <target>Retry</target>
+      </trans-unit>
+
+      <trans-unit id="contactButtonIdle" datatype="html">
+        <source>Trimite mesajul</source>
+        <target>Send Message</target>
+      </trans-unit>
+
+      <trans-unit id="contactButtonSuccess" datatype="html">
+        <source>Mesaj trimis</source>
+        <target>Message Sent</target>
+      </trans-unit>
+      <trans-unit id="contactFormMessagePlaceholder" datatype="html">
+        <source>Descrieți proiectul sau oportunitatea de parteneriat...</source>
+        <target>Describe the project or partnership opportunity...</target>
+      </trans-unit>
+      <trans-unit id="contactFooterCompanyName" datatype="html">
+        <source>ICD GROUP</source>
+        <target>ICD GROUP</target>
+      </trans-unit>
+
+      <trans-unit id="contactFooterSlogan" datatype="html">
+        <source>Dezvoltăm Comunități. Generăm Viitor.</source>
+        <target>We Develop Communities. We Generate the Future.</target>
+      </trans-unit>
+
+      <trans-unit id="contactFooterContact" datatype="html">
+        <source>Contact</source>
+        <target>Contact</target>
+      </trans-unit>
+
+      <trans-unit id="contactFooterGDPR" datatype="html">
+        <source>Info GDPR</source>
+        <target>GDPR Info</target>
+      </trans-unit>
+
+      <trans-unit id="contactFooterDivisions" datatype="html">
+        <source>Divizii</source>
+        <target>Divisions</target>
+      </trans-unit>
+
+      <trans-unit id="contactFooterEnergy" datatype="html">
+        <source>Dezvoltări Energetice</source>
+        <target>Energy Developments</target>
+      </trans-unit>
+
+      <trans-unit id="contactFooterRealEstate" datatype="html">
+        <source>Dezvoltări Imobiliare</source>
+        <target>Real Estate Developments</target>
+      </trans-unit>
+
+      <trans-unit id="contactFooterRights" datatype="html">
+        <source>&copy; 2025 ICD GROUP. Toate drepturile rezervate.</source>
+        <target>&copy; 2025 ICD GROUP. All rights reserved.</target>
+      </trans-unit>
+      <trans-unit id="aboutNavHome" datatype="html">
+        <source>Home</source>
+        <target>Home</target>
+      </trans-unit>
+
+      <trans-unit id="aboutNavAbout" datatype="html">
+        <source>Despre Noi</source>
+        <target>About Us</target>
+      </trans-unit>
+
+      <trans-unit id="aboutNavEnergySolutions" datatype="html">
+        <source>Soluții Energetice</source>
+        <target>Energy Solutions</target>
+      </trans-unit>
+
+      <trans-unit id="aboutNavPortfolio" datatype="html">
+        <source>Portofoliu Imobiliar</source>
+        <target>Real Estate Portfolio</target>
+      </trans-unit>
+
+      <trans-unit id="aboutNavPartnership" datatype="html">
+        <source>Parteneriat</source>
+        <target>Partnership</target>
+      </trans-unit>
+
+      <trans-unit id="aboutNavContact" datatype="html">
+        <source>Contact</source>
+        <target>Contact</target>
+      </trans-unit>
+
+      <trans-unit id="aboutHeroTitle" datatype="html">
+        <source>Despre Noi</source>
+        <target>About Us</target>
+      </trans-unit>
+
+      <trans-unit id="aboutHeroSubtitle" datatype="html">
+        <source>Fundația Performanței</source>
+        <target>Foundation of Performance</target>
+      </trans-unit>
+
+      <trans-unit id="aboutHeroDescription" datatype="html">
+        <source>O Moștenire de Încredere, O Viziune pentru Viitor</source>
+        <target>A Legacy of Trust, A Vision for the Future</target>
+      </trans-unit>
+
+      <trans-unit id="aboutCompanyTitle" datatype="html">
+        <source>ICD GROUP</source>
+        <target>ICD GROUP</target>
+      </trans-unit>
+
+      <trans-unit id="aboutCompanyDescription" datatype="html">
+        <source>
+          Reprezintă culminarea a peste 18 ani de experiență și viziune pe piața din România. Ne-am
+          impus ca un dezvoltator de încredere, cu un istoric dovedit în gestionarea unor investiții
+          complexe și valoroase.
+        </source>
+        <target>
+          Represents the culmination of over 18 years of experience and vision in the Romanian
+          market. We have established ourselves as a trusted developer, with a proven track record
+          in managing complex and valuable investments.
+        </target>
+      </trans-unit>
+
+      <trans-unit id="aboutHistoryTitle" datatype="html">
+        <source>Istoria Noastră</source>
+        <target>Our History</target>
+      </trans-unit>
+
+      <trans-unit id="aboutHistoryParagraph1" datatype="html">
+        <source>
+          Parcursul nostru a început în sectorul imobiliar, unde am gestionat investiții de peste
+          100 de milioane de euro. Am evoluat de la proiecte rezidențiale în zone în expansiune
+          către dezvoltări premium în locații centrale din București.
+        </source>
+        <target>
+          Our journey began in the real estate sector, managing investments over 100 million euros.
+          We evolved from residential projects in growing areas to premium developments in central
+          locations in Bucharest.
+        </target>
+      </trans-unit>
+
+      <trans-unit id="aboutHistoryParagraph2" datatype="html">
+        <source>
+          Această evoluție a culminat cu abordarea unor proiecte de anvergură, care transformă
+          comunități, precum regenerarea urbană a fostei platforme industriale FIRM RECOM și
+          angajamentul pentru conservarea patrimoniului prin restaurarea unor clădiri istorice.
+        </source>
+        <target>
+          This evolution culminated in undertaking large-scale projects that transform communities,
+          such as the urban regeneration of the former FIRM RECOM industrial platform and the
+          commitment to heritage conservation through the restoration of historic buildings.
+        </target>
+      </trans-unit>
+
+      <trans-unit id="aboutLeadershipTitle" datatype="html">
+        <source>Leadership</source>
+        <target>Leadership</target>
+      </trans-unit>
+
+      <trans-unit id="aboutLeadershipParagraph1" datatype="html">
+        <source>
+          La baza succesului ICD GROUP stă o echipă de leadership vizionară, profund implicată în
+          operațiunile zilnice, asigurând o abordare directă și responsabilă.
+        </source>
+        <target>
+          At the core of ICD GROUP's success is a visionary leadership team, deeply involved in
+          daily operations, ensuring a hands-on and responsible approach.
+        </target>
+      </trans-unit>
+
+      <trans-unit id="aboutLeadershipParagraph2" datatype="html">
+        <source>
+          Fiind o afacere cu rădăcini puternice în piața locală, GROUPul garantează un angajament pe
+          termen lung față de parteneri și clienți, transformând fiecare proiect într-o promisiune
+          de excelență.
+        </source>
+        <target>
+          Being a company with strong roots in the local market, the GROUP guarantees a long-term
+          commitment to partners and clients, turning every project into a promise of excellence.
+        </target>
+      </trans-unit>
+
+      <trans-unit id="aboutMissionVisionTitle" datatype="html">
+        <source>Misiune și Viziune</source>
+        <target>Mission &amp; Vision</target>
+      </trans-unit>
+
+      <trans-unit id="aboutMissionTitle" datatype="html">
+        <source>Misiunea Noastră</source>
+        <target>Our Mission</target>
+      </trans-unit>
+
+      <trans-unit id="aboutMissionDescription" datatype="html">
+        <source>
+          Să dezvoltăm proiecte de referință, imobiliare și energetice, care generează valoare
+          economică, îmbunătățesc calitatea vieții și contribuie la dezvoltarea durabilă a României.
+        </source>
+        <target>
+          To develop reference projects, both real estate and energy, that create economic value,
+          improve quality of life, and contribute to Romania’s sustainable development.
+        </target>
+      </trans-unit>
+
+      <trans-unit id="aboutVisionTitle" datatype="html">
+        <source>Viziunea Noastră</source>
+        <target>Our Vision</target>
+      </trans-unit>
+
+      <trans-unit id="aboutVisionDescription" datatype="html">
+        <source>
+          Să fim un lider integrator pe piața din România, recunoscut pentru capacitatea de a livra
+          proiecte complexe și inovatoare și pentru rolul de catalizator în tranziția energetică.
+        </source>
+        <target>
+          To be an integrative leader in the Romanian market, recognized for delivering complex and
+          innovative projects and acting as a catalyst in the energy transition.
+        </target>
+      </trans-unit>
+
+      <trans-unit id="aboutAchievementsTitle" datatype="html">
+        <source>Realizări Cheie</source>
+        <target>Key Achievements</target>
+      </trans-unit>
+
+      <trans-unit id="aboutAchievementsYears" datatype="html">
+        <source>18+ Ani</source>
+        <target>18+ Years</target>
+      </trans-unit>
+
+      <trans-unit id="aboutAchievementsExperience" datatype="html">
+        <source>Experiență în dezvoltare imobiliară</source>
+        <target>Experience in real estate development</target>
+      </trans-unit>
+
+      <trans-unit id="aboutAchievementsInvestments" datatype="html">
+        <source>100M+ EUR</source>
+        <target>100M+ EUR</target>
+      </trans-unit>
+
+      <trans-unit id="aboutAchievementsInvestmentDesc" datatype="html">
+        <source>Investiții gestionate în sectorul imobiliar și energetic.</source>
+        <target>Investments managed in the real estate and energy sectors.</target>
+      </trans-unit>
+
+      <trans-unit id="footerCompanyName" datatype="html">
+        <source>ICD GROUP</source>
+        <target>ICD GROUP</target>
+      </trans-unit>
+
+      <trans-unit id="footerCompanyTagline" datatype="html">
+        <source>Dezvoltăm Comunități. Generăm Viitor.</source>
+        <target>We Develop Communities. We Create the Future.</target>
+      </trans-unit>
+
+      <trans-unit id="footerContactLink" datatype="html">
+        <source>Contact</source>
+        <target>Contact</target>
+      </trans-unit>
+
+      <trans-unit id="footerGDPRLink" datatype="html">
+        <source>Info GDPR</source>
+        <target>GDPR Info</target>
+      </trans-unit>
+
+      <trans-unit id="footerDivisionsTitle" datatype="html">
+        <source>Divizii</source>
+        <target>Divisions</target>
+      </trans-unit>
+
+      <trans-unit id="footerDivisionEnergy" datatype="html">
+        <source>Dezvoltări Energetice</source>
+        <target>Energy Development</target>
+      </trans-unit>
+
+      <trans-unit id="footerDivisionRealEstate" datatype="html">
+        <source>Dezvoltări Imobiliare</source>
+        <target>Real Estate Development</target>
+      </trans-unit>
+
+      <trans-unit id="footerCopyright" datatype="html">
+        <source>&copy; 2025 ICD GROUP. Toate drepturile rezervate.</source>
+        <target>&copy; 2025 ICD GROUP. All rights reserved.</target>
+      </trans-unit>
+
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,31 @@
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-item:hover .portfolio-image {
+  transform: scale(1.05);
+}
+
+.portfolio-image {
+  transition: transform 0.3s ease;
+}
+
+.portfolio-content {
+  background: var(--white);
+}
+
+.portfolio-content h3 {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.portfolio-content p {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.portfolio-content strong {
+  color: var(--primary-color);
+} 

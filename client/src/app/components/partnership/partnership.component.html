@@ -1,0 +1,308 @@
+<div id="smooth-wrapper">
+  <div id="smooth-content">
+    <header class="header">
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="nav-logo">
+            <a routerLink="/home">
+              <img
+                src="/logo.png"
+                alt="ICD GROUP Logo"
+                style="height: 48px; width: auto; display: block"
+              />
+            </a>
+          </div>
+          <ul class="nav-menu" [class.active]="isMenuOpen">
+            <li class="nav-item">
+              <a
+                routerLink="/home"
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{ exact: true }"
+                class="nav-link"
+                (click)="closeMenu()"
+                i18n="@@partnershipHome"
+                >Acasă</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                routerLink="/about"
+                routerLinkActive="active"
+                class="nav-link"
+                (click)="closeMenu()"
+                i18n="@@partnershipAbout"
+                >Despre Noi</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                routerLink="/energy-solutions"
+                routerLinkActive="active"
+                class="nav-link"
+                (click)="closeMenu()"
+                i18n="@@partnershipEnergySolutions"
+                >Soluții Energetice</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                routerLink="/portfolio"
+                routerLinkActive="active"
+                class="nav-link"
+                (click)="closeMenu()"
+                i18n="@@partnershipPortfolio"
+                >Portofoliu Imobiliar</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                routerLink="/partnership"
+                routerLinkActive="active"
+                class="nav-link"
+                (click)="closeMenu()"
+                i18n="@@partnershipPage"
+                >Parteneriat</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                routerLink="/contact"
+                routerLinkActive="active"
+                class="nav-link"
+                (click)="closeMenu()"
+                i18n="@@partnershipContact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <div class="hamburger" (click)="toggleMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <!-- Hero Section -->
+      <section class="hero" style="min-height: 10dvh">
+        <div class="hero-content">
+          <h1 i18n="@@partnershipHeroTitle">Oportunități de Parteneriat</h1>
+          <p i18n="@@partnershipHeroDescription">
+            Căutăm parteneri care împărtășesc viziunea și standardele noastre de
+            excelență pentru a capitaliza oportunitățile unice de pe piața
+            românească.
+          </p>
+        </div>
+      </section>
+
+      <!-- Partnership Opportunities Section -->
+      <section class="section">
+        <div class="container">
+          <div class="section-title">
+            <h2 i18n="@@partnershipModelsTitle">Modele de Parteneriat</h2>
+            <p i18n="@@partnershipModelsSubtitle">
+              Construim împreună proiecte profitabile și durabile în sectorul
+              energetic și imobiliar.
+            </p>
+          </div>
+
+          <div class="grid grid-3">
+            <div class="card fade-in-up">
+              <h3 i18n="@@partnershipInvestorsTitle">Pentru Investitori</h3>
+              <p i18n="@@partnershipInvestorsText">
+                Vă invităm să descoperiți modelele noastre de parteneriat pentru
+                a construi împreună proiecte profitabile și durabile în sectorul
+                energetic.
+              </p>
+              <ul>
+                <li i18n="@@partnershipInvestorsLi1">
+                  Investiții în parcuri fotovoltaice
+                </li>
+                <li i18n="@@partnershipInvestorsLi2">
+                  Proiecte BESS stand alone
+                </li>
+                <li i18n="@@partnershipInvestorsLi3">
+                  Dezvoltări imobiliare premium
+                </li>
+                <li i18n="@@partnershipInvestorsLi4">ROE excelent</li>
+              </ul>
+            </div>
+
+            <div class="card fade-in-up">
+              <h3 i18n="@@partnershipLandownersTitle">
+                Pentru Proprietari de Terenuri
+              </h3>
+              <p i18n="@@partnershipLandownersText">
+                Dețineți un teren pretabil pentru un parc fotovoltaic?
+                Contactați-ne pentru a explora opțiuni flexibile de colaborare.
+              </p>
+              <ul>
+                <li i18n="@@partnershipLandownersLi1">
+                  Evaluare gratuită a terenului
+                </li>
+                <li i18n="@@partnershipLandownersLi2">
+                  Opțiuni flexibile de colaborare
+                </li>
+                <li i18n="@@partnershipLandownersLi3">Dezvoltare la cheie</li>
+                <li i18n="@@partnershipLandownersLi4">
+                  Beneficii pe termen lung
+                </li>
+              </ul>
+            </div>
+
+            <div class="card fade-in-up">
+              <h3 i18n="@@partnershipIndustryPartnersTitle">
+                Pentru Parteneri Industriali
+              </h3>
+              <p i18n="@@partnershipIndustryPartnersText">
+                Suntem deschiși la colaborări cu furnizori de tehnologie de top
+                și companii de construcții specializate.
+              </p>
+              <ul>
+                <li i18n="@@partnershipIndustryPartnersLi1">
+                  Furnizori de tehnologie
+                </li>
+                <li i18n="@@partnershipIndustryPartnersLi2">
+                  Companii de construcții
+                </li>
+                <li i18n="@@partnershipIndustryPartnersLi3">
+                  Expertiză tehnică
+                </li>
+                <li i18n="@@partnershipIndustryPartnersLi4">
+                  Proiecte la scară mare
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Partner With Us Section -->
+      <section class="section" style="background-color: var(--light-gray)">
+        <div class="container">
+          <div class="section-title">
+            <h2 i18n="@@partnershipWhyPartnerTitle">
+              De ce să faceți un parteneriat cu noi?
+            </h2>
+          </div>
+
+          <div class="grid grid-2">
+            <div class="card fade-in-up">
+              <h3 i18n="@@partnershipProvenExperienceTitle">
+                Experiență Dovedită
+              </h3>
+              <p i18n="@@partnershipProvenExperienceText">
+                Peste 18 ani de experiență în dezvoltare imobiliară și o echipă
+                cu expertiză în proiecte energetice complexe. Am gestionat
+                investiții de peste 100 de milioane de euro cu succes.
+              </p>
+            </div>
+
+            <div class="card fade-in-up">
+              <h3 i18n="@@partnershipUniqueOpportunitiesTitle">
+                Oportunități Unice
+              </h3>
+              <p i18n="@@partnershipUniqueOpportunitiesText">
+                Capitalizăm pe oportunitățile unice de pe piața românească,
+                inclusiv eliminarea dublei taxări pentru energia stocată și
+                fondurile europene disponibile pentru proiecte verzi.
+              </p>
+            </div>
+
+            <div class="card fade-in-up">
+              <h3 i18n="@@partnershipIntegratedApproachTitle">
+                Abordare Integrată
+              </h3>
+              <p i18n="@@partnershipIntegratedApproachText">
+                Oferim soluții complete de la concept la implementare, cu
+                expertiză atât în sectorul imobiliar cât și în cel energetic,
+                oferind diversificare și stabilitate investițională.
+              </p>
+            </div>
+
+            <div class="card fade-in-up">
+              <h3 i18n="@@partnershipLongTermCommitmentTitle">
+                Angajament pe Termen Lung
+              </h3>
+              <p i18n="@@partnershipLongTermCommitmentText">
+                Construim relații de încredere cu partenerii noștri, asigurând
+                un angajament pe termen lung și o abordare transparentă în toate
+                proiectele noastre.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact CTA Section -->
+      <section class="section">
+        <div class="container">
+          <div class="section-title">
+            <h2 i18n="@@partnershipCtaTitle">Hai Să Discutăm</h2>
+            <p i18n="@@partnershipCtaText">
+              Suntem aici pentru a explora împreună oportunitățile de
+              parteneriat și pentru a construi viitorul României.
+            </p>
+          </div>
+
+          <div class="text-center">
+            <a
+              routerLink="/contact"
+              class="btn btn-primary"
+              i18n="@@partnershipCtaButton"
+              >Contactați-ne Acum</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3 i18n="@@partnershipFooterCompanyName">ICD GROUP</h3>
+          <p i18n="@@partnershipFooterSlogan">
+            Dezvoltăm Comunități. Generăm Viitor.
+          </p>
+        </div>
+
+        <div class="footer-section">
+          <h4>
+            <a routerLink="/contact" i18n="@@partnershipFooterContact"
+              >Contact</a
+            >
+          </h4>
+          <h4>
+            <a
+              href="https://docs.google.com/document/d/1oCtRIs4Vv5bFFu3Q44Prhmxw0EmAeO3flP8Cld3Yb5k/edit?usp=sharing"
+              target="_blank"
+              rel="noopener"
+              i18n="@@partnershipFooterGDPR"
+              >Info GDPR</a
+            >
+          </h4>
+        </div>
+
+        <div class="footer-section">
+          <h4 i18n="@@partnershipFooterDivisions">Divizii</h4>
+          <ul>
+            <li i18n="@@partnershipFooterEnergyDivision">
+              Dezvoltări Energetice
+            </li>
+            <li i18n="@@partnershipFooterRealEstateDivision">
+              Dezvoltări Imobiliare
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p i18n="@@partnershipFooterRights">
+          &copy; 2025 ICD GROUP. Toate drepturile rezervate.
+        </p>
+      </div>
+    </footer>
+  </div>
+</div>

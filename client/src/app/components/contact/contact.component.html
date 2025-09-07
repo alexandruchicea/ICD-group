@@ -1,0 +1,347 @@
+<div id="smooth-wrapper">
+  <div id="smooth-content">
+    <header class="header">
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="nav-logo">
+            <a routerLink="/home">
+              <img
+                src="/logo.png"
+                alt="ICD GROUP Logo"
+                style="height: 48px; width: auto; display: block"
+              />
+            </a>
+          </div>
+          <ul class="nav-menu" [class.active]="isMenuOpen">
+            <li class="nav-item">
+              <a
+                routerLink="/home"
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{ exact: true }"
+                class="nav-link"
+                (click)="closeMenu()"
+                i18n="@@contactHome"
+                >Acasă</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                routerLink="/about"
+                routerLinkActive="active"
+                class="nav-link"
+                (click)="closeMenu()"
+                i18n="@@contactAbout"
+                >Despre Noi</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                routerLink="/energy-solutions"
+                routerLinkActive="active"
+                class="nav-link"
+                (click)="closeMenu()"
+                i18n="@@contactEnergySolutions"
+                >Soluții Energetice</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                routerLink="/portfolio"
+                routerLinkActive="active"
+                class="nav-link"
+                (click)="closeMenu()"
+                i18n="@@contactPortfolio"
+                >Portofoliu Imobiliar</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                routerLink="/partnership"
+                routerLinkActive="active"
+                class="nav-link"
+                (click)="closeMenu()"
+                i18n="@@contactPartnership"
+                >Parteneriat</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                routerLink="/contact"
+                routerLinkActive="active"
+                class="nav-link"
+                (click)="closeMenu()"
+                i18n="@@contactPage"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <div class="hamburger" (click)="toggleMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <!-- Hero Section -->
+      <section class="hero" style="min-height: 10dvh">
+        <div class="hero-content">
+          <h1 i18n="@@contactHeroTitle">Contact</h1>
+          <p i18n="@@contactHeroDescription">
+            Suntem la dispoziția dumneavoastră pentru a discuta despre
+            proiectele noastre și despre cum putem colabora.
+          </p>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="section">
+        <div class="container">
+          <div class="grid grid-2">
+            <!-- Contact Information -->
+            <div class="contact-info">
+              <div class="section-title" style="text-align: left">
+                <h2 i18n="@@contactInfoTitle">Informații de Contact</h2>
+              </div>
+
+              <div class="contact-details">
+                <div class="contact-item">
+                  <h3 i18n="@@contactAddressTitle">Adresa</h3>
+                  <p i18n="@@contactAddressText">
+                    Str Petru Rares 5-9 sc 2 ap 7<br />Sector 1, Bucuresti
+                  </p>
+                </div>
+
+                <div class="contact-item">
+                  <h3 i18n="@@contactPhoneTitle">Telefon</h3>
+                  <p i18n="@@contactPhoneText1">031.40.555.44</p>
+                  <p i18n="@@contactPhoneText2">031.40.555.43</p>
+                </div>
+
+                <div class="contact-item">
+                  <h3 i18n="@@contactProgramTitle">Program</h3>
+                  <p i18n="@@contactProgramText">Luni - Vineri: 9:00 - 18:00</p>
+                </div>
+
+                <div class="contact-item">
+                  <h3 i18n="@@contactDivisionsTitle">Divizii</h3>
+                  <ul>
+                    <li i18n="@@contactDivisionEnergy">
+                      Dezvoltări Energetice
+                    </li>
+                    <li i18n="@@contactDivisionRealEstate">
+                      Dezvoltări Imobiliare
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form">
+              <div class="section-title" style="text-align: left">
+                <h2 i18n="@@contactFormTitle">Trimiteți-ne un Mesaj</h2>
+                <p i18n="@@contactFormSubtitle">
+                  Completați formularul de mai jos și vă vom contacta în cel mai
+                  scurt timp.
+                </p>
+              </div>
+
+              <form (submit)="onSubmit($event)">
+                <div class="form-group">
+                  <label for="name" i18n="@@contactFormNameLabel"
+                    >Nume complet *</label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    [(ngModel)]="contactForm.name"
+                    required
+                    class="form-control"
+                    [ngClass]="{
+                      'error-outline':
+                        submitting === 'error' && !contactForm.name
+                    }"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="email" i18n="@@contactFormEmailLabel"
+                    >Email *</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    [(ngModel)]="contactForm.email"
+                    required
+                    class="form-control"
+                    [ngClass]="{
+                      'error-outline':
+                        submitting === 'error' && !contactForm.email
+                    }"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="phone" i18n="@@contactFormPhoneLabel"
+                    >Telefon</label
+                  >
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    [(ngModel)]="contactForm.phone"
+                    class="form-control"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="company" i18n="@@contactFormCompanyLabel"
+                    >Companie</label
+                  >
+                  <input
+                    type="text"
+                    id="company"
+                    name="company"
+                    [(ngModel)]="contactForm.company"
+                    class="form-control"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="message" i18n="@@contactFormMessageLabel"
+                    >Mesaj *</label
+                  >
+                  <textarea
+                    id="message"
+                    name="message"
+                    [(ngModel)]="contactForm.message"
+                    required
+                    rows="5"
+                    class="form-control"
+                    placeholder="Descrieți proiectul sau oportunitatea de parteneriat..."
+                    i18n-placeholder="@@contactFormMessagePlaceholder"
+                    [ngClass]="{
+                      'error-outline':
+                        submitting === 'error' && !contactForm.message
+                    }"
+                  ></textarea>
+                </div>
+
+                <div class="form-group">
+                  <div #recaptchaElem></div>
+                  <div
+                    *ngIf="recaptchaError"
+                    class="error-outline"
+                    style="color: #e74c3c; margin-top: 0.5rem"
+                    i18n="@@contactRecaptchaError"
+                  >
+                    Vă rugăm să completați testul reCAPTCHA.
+                  </div>
+                </div>
+
+                <div
+                  *ngIf="submitting === 'success'"
+                  class="success-message"
+                  style="
+                    color: #27ae60;
+                    margin-bottom: 1rem;
+                    padding: 0.75rem;
+                    background-color: #d5f4e6;
+                    border-radius: 4px;
+                  "
+                  i18n="@@contactSuccessMessage"
+                >
+                  Mesajul vostru a fost trimis! Veti fi contactat curand.
+                </div>
+
+                <div
+                  *ngIf="submitting === 'error'"
+                  class="error-message"
+                  style="
+                    color: #e74c3c;
+                    margin-bottom: 1rem;
+                    padding: 0.75rem;
+                    background-color: #fadbd8;
+                    border-radius: 4px;
+                  "
+                  i18n="@@contactErrorMessage"
+                >
+                  {{ submitError }} Completeaza toate campurile obligatorii.
+                </div>
+
+                <button
+                  type="submit"
+                  class="btn btn-primary"
+                  [disabled]="
+                    submitting === 'pending' || submitting === 'success'
+                  "
+                >
+                  <span
+                    *ngIf="submitting === 'pending'"
+                    i18n="@@contactButtonPending"
+                    >Se trimite...</span
+                  >
+                  <span
+                    *ngIf="submitting === 'error'"
+                    i18n="@@contactButtonError"
+                    >Reîncercați</span
+                  >
+                  <span *ngIf="submitting === 'idle'" i18n="@@contactButtonIdle"
+                    >Trimite mesajul</span
+                  >
+                  <span
+                    *ngIf="submitting === 'success'"
+                    i18n="@@contactButtonSuccess"
+                    >Mesaj trimis</span
+                  >
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3 i18n="@@contactFooterCompanyName">ICD GROUP</h3>
+          <p i18n="@@contactFooterSlogan">
+            Dezvoltăm Comunități. Generăm Viitor.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h4>
+            <a routerLink="/contact" i18n="@@contactFooterContact">Contact</a>
+          </h4>
+          <h4>
+            <a
+              href="https://docs.google.com/document/d/1oCtRIs4Vv5bFFu3Q44Prhmxw0EmAeO3flP8Cld3Yb5k/edit?usp=sharing"
+              target="_blank"
+              rel="noopener"
+              i18n="@@contactFooterGDPR"
+              >Info GDPR</a
+            >
+          </h4>
+        </div>
+        <div class="footer-section">
+          <h4 i18n="@@contactFooterDivisions">Divizii</h4>
+          <ul>
+            <li i18n="@@contactFooterEnergy">Dezvoltări Energetice</li>
+            <li i18n="@@contactFooterRealEstate">Dezvoltări Imobiliare</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p i18n="@@contactFooterRights">
+          &copy; 2025 ICD GROUP. Toate drepturile rezervate.
+        </p>
+      </div>
+    </footer>
+  </div>
+</div>

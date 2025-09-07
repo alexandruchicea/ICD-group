@@ -1,0 +1,311 @@
+<div id="smooth-wrapper">
+  <div id="smooth-content">
+    <header class="header">
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="nav-logo">
+            <a routerLink="/home">
+              <img
+                src="/logo.png"
+                alt="ICD GROUP Logo"
+                style="height: 48px; width: auto; display: block"
+              />
+            </a>
+          </div>
+          <ul class="nav-menu" [class.active]="isMenuOpen">
+            <li class="nav-item">
+              <a
+                routerLink="/home"
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{ exact: true }"
+                class="nav-link"
+                (click)="closeMenu()"
+                i18n="@@homeNavHome"
+                >Acasă</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                routerLink="/about"
+                routerLinkActive="active"
+                class="nav-link"
+                (click)="closeMenu()"
+                i18n="@@homeNavAbout"
+                >Despre Noi</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                routerLink="/energy-solutions"
+                routerLinkActive="active"
+                class="nav-link"
+                (click)="closeMenu()"
+                i18n="@@homeNavEnergySolutions"
+                >Soluții Energetice</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                routerLink="/portfolio"
+                routerLinkActive="active"
+                class="nav-link"
+                (click)="closeMenu()"
+                i18n="@@homeNavPortfolio"
+                >Portofoliu Imobiliar</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                routerLink="/partnership"
+                routerLinkActive="active"
+                class="nav-link"
+                (click)="closeMenu()"
+                i18n="@@homeNavPartnership"
+                >Parteneriat</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                routerLink="/contact"
+                routerLinkActive="active"
+                class="nav-link"
+                (click)="closeMenu()"
+                i18n="@@homeNavContact"
+                >Contact</a
+              >
+            </li>
+            <li class="nav-item">
+              <button
+                class="nav-button"
+                (click)="onApply()"
+                i18n="@@homeNavApply"
+              >
+                {{ isRomanian ? "Aplică acum" : "Apply now" }}
+              </button>
+            </li>
+            <li class="nav-item">
+              <button
+                class="nav-button language-toggle"
+                (click)="toggleLanguage()"
+                [title]="getLanguageToggleTitle()"
+              >
+                {{ currentFlag }} {{ currentLanguageLabel }}
+              </button>
+            </li>
+          </ul>
+
+          <div class="hamburger" (click)="toggleMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <!-- Hero Section -->
+      <section class="hero">
+        <img
+          ngSrc="/fotovoltaic 2.jpg"
+          fill
+          priority
+          alt="Fotovoltaic"
+          style="
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+            filter: brightness(50%);
+          "
+        />
+        <div class="hero-content">
+          <h1 i18n="@@homeHeroTitle">ICD GROUP</h1>
+          <p class="hero-subtitle" i18n="@@homeHeroSubtitle">
+            Construim la o scară care contează
+          </p>
+          <p i18n="@@homeHeroText">
+            Dezvoltăm parcuri fotovoltaice și sisteme de stocare a energiei care
+            asigură independență și stabilitate energetică. Aceeași viziune
+            pentru un viitor durabil o aducem apoi la scara cea mai importantă:
+            în comunitățile rezidențiale pe care le creăm, unde acest viitor
+            devine „acasă”. De la ansambluri rezidențiale moderne la parcuri
+            fotovoltaice si sisteme de stocare a energiei in baterii,
+            angajamentul nostru este pentru calitate, eficiență, un viitor mai
+            verde și mai curat pentru copii noștri.
+          </p>
+          <div class="hero-buttons">
+            <a
+              routerLink="/energy-solutions"
+              class="btn btn-primary"
+              i18n="@@homeHeroBtnEnergy"
+            >
+              Descoperiți Soluțiile Energetice
+            </a>
+            <a
+              routerLink="/portfolio"
+              class="btn btn-secondary"
+              i18n="@@homeHeroBtnPortfolio"
+            >
+              Explorați Portofoliul Imobiliar
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stats Section -->
+      <section class="stats-section">
+        <div class="container">
+          <div class="stats-grid">
+            <div class="stat-item">
+              <h3 i18n="@@homeStatsExperienceValue">18+</h3>
+              <p i18n="@@homeStatsExperienceText">Ani de Experiență</p>
+            </div>
+            <div class="stat-item">
+              <h3 i18n="@@homeStatsInvestmentValue">100M+</h3>
+              <p i18n="@@homeStatsInvestmentText">Euro Investiții Gestionate</p>
+            </div>
+            <div class="stat-item">
+              <h3 i18n="@@homeStatsProjectsValue">100%</h3>
+              <p i18n="@@homeStatsProjectsText">
+                Proiecte Finalizate cu Succes
+              </p>
+            </div>
+            <div class="stat-item">
+              <h3 i18n="@@homeStatsDivisionsValue">2</h3>
+              <p i18n="@@homeStatsDivisionsText">Divizii Strategice</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Strategic Divisions Section -->
+      <section class="section">
+        <div class="container">
+          <div class="section-title">
+            <h2 i18n="@@homeDivisionsTitle">Diviziile Noastre Strategice</h2>
+            <p i18n="@@homeDivisionsText">
+              Cu o experiență solidă în dezvoltare imobiliară și o viziune clară
+              pentru energie regenerabilă, transformăm peisajul României,
+              proiect cu proiect.
+            </p>
+          </div>
+
+          <div class="grid grid-2">
+            <div class="card fade-in-up">
+              <h3 i18n="@@homeEnergyTitle">Dezvoltări Energetice</h3>
+              <p i18n="@@homeEnergyText">
+                Dezvoltăm parcuri fotovoltaice la cheie și implementăm sisteme
+                avansate de stocare a energiei (BESS), contribuind la
+                securitatea energetică a României într-un context de piață unic.
+              </p>
+              <a
+                routerLink="/energy-solutions"
+                class="btn btn-primary"
+                i18n="@@homeEnergyBtn"
+              >
+                Descoperiți Soluțiile Energetice
+              </a>
+            </div>
+
+            <div class="card fade-in-up">
+              <h3 i18n="@@homeRealEstateTitle">Dezvoltări Imobiliare</h3>
+              <p i18n="@@homeRealEstateText">
+                De peste 18 ani, creăm spații de locuit excepționale și
+                regenerăm zone urbane. Portofoliul nostru, cu investiții
+                gestionate de peste 100 de milioane de euro, este garanția
+                calității.
+              </p>
+              <a
+                routerLink="/portfolio"
+                class="btn btn-primary"
+                i18n="@@homeRealEstateBtn"
+              >
+                Explorați Portofoliul Imobiliar
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Commitment Section -->
+      <section class="section" style="background-color: var(--light-gray)">
+        <div class="container">
+          <div class="section-title">
+            <h2 i18n="@@homeCommitmentTitle">Angajamentul Nostru</h2>
+          </div>
+
+          <div class="grid grid-3">
+            <div class="card fade-in-up">
+              <h3 i18n="@@homeCommitmentInnovationTitle">Inovație</h3>
+              <p i18n="@@homeCommitmentInnovationText">
+                Anticipăm tendințele pieței și integrăm cele mai noi tehnologii,
+                de la soluții BESS pentru rețeaua energetică la concepte de
+                regenerare urbană în zone strategice.
+              </p>
+            </div>
+
+            <div class="card fade-in-up">
+              <h3 i18n="@@homeCommitmentSustainabilityTitle">
+                Sustenabilitate
+              </h3>
+              <p i18n="@@homeCommitmentSustainabilityText">
+                Fiecare proiect este conceput cu un profund respect pentru mediu
+                și pentru moștenirea lăsată generațiilor viitoare, inclusiv prin
+                protejarea patrimoniului cultural.
+              </p>
+            </div>
+
+            <div class="card fade-in-up">
+              <h3 i18n="@@homeCommitmentIntegrityTitle">Integritate</h3>
+              <p i18n="@@homeCommitmentIntegrityText">
+                Construim pe o fundație de încredere. Reputația noastră este cel
+                mai de preț activ, reflectat în fiecare parteneriat și proiect
+                finalizat.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3 i18n="@@homeFooterCompanyName">ICD GROUP</h3>
+          <p i18n="@@homeFooterSlogan">Dezvoltăm Comunități. Generăm Viitor.</p>
+        </div>
+        <div class="footer-section">
+          <h4>
+            <a routerLink="/contact" i18n="@@homeFooterContact">Contact</a>
+          </h4>
+          <h4>
+            <a
+              href="https://docs.google.com/document/d/1oCtRIs4Vv5bFFu3Q44Prhmxw0EmAeO3flP8Cld3Yb5k/edit?usp=sharing"
+              target="_blank"
+              rel="noopener"
+              i18n="@@homeFooterGDPR"
+              >Info GDPR</a
+            >
+          </h4>
+        </div>
+        <div class="footer-section">
+          <h4 i18n="@@homeFooterDivisions">Divizii</h4>
+          <ul>
+            <li i18n="@@homeFooterEnergyDivision">Dezvoltări Energetice</li>
+            <li i18n="@@homeFooterRealEstateDivision">Dezvoltări Imobiliare</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p i18n="@@homeFooterRights">
+          &copy; 2025 ICD GROUP. Toate drepturile rezervate.
+        </p>
+      </div>
+    </footer>
+  </div>
+</div>
