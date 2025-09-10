@@ -17,3 +17,22 @@
     max-width: 300px;
   }
 }
+.nav-button.language-toggle {
+  display: inline-block;
+  width: 50px;
+  height: 20px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  vertical-align: middle;
+  box-shadow: none !important;
+  border: none;
+  background: transparent;
+}
+
+.nav-button.language-toggle:hover {
+  transform: scale(1.1);
+}
+
+.nav-button.language-toggle:focus {
+  outline: 2px solid #007bff;
+}

@@ -74,6 +74,18 @@
                 >Contact</a
               >
             </li>
+            <li class="nav-item">
+              <button
+                (click)="toggleLanguage()"
+                [title]="getLanguageToggleTitle()"
+              >
+                <img
+                  class="nav-button language-toggle"
+                  src="rouk1.png"
+                  alt="description"
+                />
+              </button>
+            </li>
           </ul>
           <div class="hamburger" (click)="toggleMenu()">
             <span class="bar"></span>

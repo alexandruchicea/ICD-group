@@ -17,6 +17,8 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ScrollSmoother } from 'gsap/ScrollSmoother';
 import { API_URL } from '../../../app.config.url';
+import { Subscription } from 'rxjs';
+import { LanguageService, Language } from '../../services/language.service';
 
 declare global {
   interface Window {
@@ -32,10 +34,25 @@ declare global {
   styleUrls: ['./contact.component.css'],
 })
 export class ContactComponent implements AfterViewInit, OnInit {
+  getLanguageToggleTitle() {
+    throw new Error('Method not implemented.');
+  }
+  toggleLanguage() {
+    throw new Error('Method not implemented.');
+  }
   @ViewChild('recaptchaElem', { static: false }) recaptchaElem!: ElementRef;
   widgetId: number | null = null;
 
   isMenuOpen = false;
+  private platformId = inject(PLATFORM_ID);
+
+  private languageService = inject(LanguageService);
+  private languageSubscription?: Subscription;
+
+  currentLanguage: Language = 'ro';
+  isRomanian = true;
+  currentFlag = '🇷🇴';
+  currentLanguageLabel = 'Română';
 
   contactForm = {
     name: '',
@@ -63,6 +80,18 @@ export class ContactComponent implements AfterViewInit, OnInit {
     if (!isPlatformBrowser(this.platformId)) {
       return;
     }
+
+    this.languageSubscription = this.languageService.language$.subscribe(
+      (language) => {
+        this.currentLanguage = language;
+        this.isRomanian = this.languageService.isRomanian();
+        this.currentFlag = this.languageService.getLanguageFlag();
+        this.currentLanguageLabel = this.languageService.getLanguageLabel();
+
+        // Update document language
+        document.documentElement.lang = language;
+      }
+    );
     gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
     // Wait for DOM to be ready
     setTimeout(() => {
@@ -87,7 +116,6 @@ export class ContactComponent implements AfterViewInit, OnInit {
     this.isMenuOpen = false;
   }
 
-  private platformId = inject(PLATFORM_ID);
   ngAfterViewInit() {
     if (isPlatformBrowser(this.platformId)) {
       this.renderRecaptcha();
