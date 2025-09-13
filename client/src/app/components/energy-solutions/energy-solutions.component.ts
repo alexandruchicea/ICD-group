@@ -9,17 +9,11 @@ import { LanguageService, Language } from '../../services/language.service';
 
 @Component({
   selector: 'app-energy-solutions',
-  imports: [RouterLink, RouterLinkActive],
+  imports: [RouterLink],
   templateUrl: './energy-solutions.component.html',
   styleUrls: ['./energy-solutions.component.css'],
 })
 export class EnergySolutionsComponent implements OnInit {
-  getLanguageToggleTitle() {
-    throw new Error('Method not implemented.');
-  }
-  toggleLanguage() {
-    throw new Error('Method not implemented.');
-  }
   isMenuOpen = false;
   private platformId = inject(PLATFORM_ID);
 

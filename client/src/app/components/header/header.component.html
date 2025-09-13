@@ -1,0 +1,47 @@
+<header class="header">
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a routerLink="/home">
+          <img src="logo.png" alt="ICD GROUP Logo" style="height: 48px; width: auto; display: block" />
+        </a>
+      </div>
+      <ul class="nav-menu" [class.active]="isMenuOpen()">
+        <li class="nav-item">
+          <a routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="nav-link"
+            (click)="closeMenu()" i18n="@@contactHome">Acasă</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="about" routerLinkActive="active" class="nav-link" (click)="closeMenu()"
+            i18n="@@contactAbout">Despre Noi</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="energy-solutions" routerLinkActive="active" class="nav-link" (click)="closeMenu()"
+            i18n="@@contactEnergySolutions">Soluții Energetice</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="portfolio" routerLinkActive="active" class="nav-link" (click)="closeMenu()"
+            i18n="@@contactPortfolio">Portofoliu Imobiliar</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="partnership" routerLinkActive="active" class="nav-link" (click)="closeMenu()"
+            i18n="@@contactPartnership">Parteneriat</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="contact" routerLinkActive="active" class="nav-link" (click)="closeMenu()"
+            i18n="@@contactPage">Contact</a>
+        </li>
+        <li class="nav-item">
+          <button (click)="toggleLanguage()" [title]="getLanguageToggleTitle()">
+            <img class="nav-button language-toggle" src="rouk1.png" alt="description" />
+          </button>
+        </li>
+      </ul>
+      <div class="hamburger" (click)="toggleMenu()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+</header>

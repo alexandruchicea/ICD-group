@@ -9,17 +9,11 @@ import { LanguageService, Language } from '../../services/language.service';
 
 @Component({
   selector: 'app-partnership',
-  imports: [RouterLink, RouterLinkActive],
+  imports: [RouterLink],
   templateUrl: './partnership.component.html',
   styleUrls: ['./partnership.component.css'],
 })
 export class PartnershipComponent implements OnInit {
-  getLanguageToggleTitle() {
-    throw new Error('Method not implemented.');
-  }
-  toggleLanguage() {
-    throw new Error('Method not implemented.');
-  }
   isMenuOpen = false;
   private platformId = inject(PLATFORM_ID);
 

@@ -29,25 +29,15 @@ declare global {
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule, CommonModule, RouterLink, RouterLinkActive],
+  imports: [FormsModule, CommonModule, RouterLink],
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css'],
 })
 export class ContactComponent implements AfterViewInit, OnInit {
-  getLanguageToggleTitle() {
-    throw new Error('Method not implemented.');
-  }
-  toggleLanguage() {
-    throw new Error('Method not implemented.');
-  }
   @ViewChild('recaptchaElem', { static: false }) recaptchaElem!: ElementRef;
   widgetId: number | null = null;
 
-  isMenuOpen = false;
   private platformId = inject(PLATFORM_ID);
-
-  private languageService = inject(LanguageService);
-  private languageSubscription?: Subscription;
 
   currentLanguage: Language = 'ro';
   isRomanian = true;
@@ -81,17 +71,6 @@ export class ContactComponent implements AfterViewInit, OnInit {
       return;
     }
 
-    this.languageSubscription = this.languageService.language$.subscribe(
-      (language) => {
-        this.currentLanguage = language;
-        this.isRomanian = this.languageService.isRomanian();
-        this.currentFlag = this.languageService.getLanguageFlag();
-        this.currentLanguageLabel = this.languageService.getLanguageLabel();
-
-        // Update document language
-        document.documentElement.lang = language;
-      }
-    );
     gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
     // Wait for DOM to be ready
     setTimeout(() => {
@@ -106,14 +85,6 @@ export class ContactComponent implements AfterViewInit, OnInit {
         });
       }
     }, 0);
-  }
-
-  toggleMenu() {
-    this.isMenuOpen = !this.isMenuOpen;
-  }
-
-  closeMenu() {
-    this.isMenuOpen = false;
   }
 
   ngAfterViewInit() {
