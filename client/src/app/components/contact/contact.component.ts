@@ -39,11 +39,6 @@ export class ContactComponent implements AfterViewInit, OnInit {
 
   private platformId = inject(PLATFORM_ID);
 
-  currentLanguage: Language = 'ro';
-  isRomanian = true;
-  currentFlag = '🇷🇴';
-  currentLanguageLabel = 'Română';
-
   contactForm = {
     name: '',
     email: '',
@@ -94,14 +89,11 @@ export class ContactComponent implements AfterViewInit, OnInit {
   }
 
   renderRecaptcha() {
-    // Wait for reCAPTCHA to be loaded
-    if (typeof window.grecaptcha === 'undefined') {
-      // If reCAPTCHA is not loaded yet, wait and retry
+    if (typeof window.grecaptcha === 'undefined' || !window.grecaptcha.render) {
       setTimeout(() => this.renderRecaptcha(), 100);
       return;
     }
 
-    // Remove any previous widget if present
     if (this.widgetId !== null && window.grecaptcha) {
       try {
         window.grecaptcha.reset(this.widgetId);
@@ -113,6 +105,7 @@ export class ContactComponent implements AfterViewInit, OnInit {
     // Render the widget
     if (
       window.grecaptcha &&
+      window.grecaptcha.render &&
       this.recaptchaElem &&
       this.recaptchaElem.nativeElement
     ) {
@@ -139,7 +132,6 @@ export class ContactComponent implements AfterViewInit, OnInit {
       setTimeout(() => this.renderRecaptcha(), 100);
     }
   }
-
   onSubmit(event: Event) {
     event.preventDefault();
     this.recaptchaError = false;
