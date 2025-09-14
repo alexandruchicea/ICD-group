@@ -47,7 +47,7 @@ app.get('/health', (req, res) => {
 });
 
 // API routes
-app.use('/api', contactRouter);
+app.use('/', contactRouter);
 
 // 404 handler
 app.use('*', (req, res) => {
