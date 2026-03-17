@@ -1,6 +1,13 @@
-import { Component, inject, OnInit, PLATFORM_ID } from '@angular/core';
+import {
+  Component,
+  Inject,
+  inject,
+  LOCALE_ID,
+  OnInit,
+  PLATFORM_ID,
+} from '@angular/core';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
-import { RouterLink, RouterLinkActive } from '@angular/router';
+import { RouterLink } from '@angular/router';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ScrollSmoother } from 'gsap/ScrollSmoother';
@@ -9,24 +16,24 @@ type Project = {
   name: string;
   location: string;
   year: string;
-  type: string;
+  type: Record<'ro' | 'en', string>;
   image: string;
 };
 
 @Component({
   selector: 'app-portfolio',
-  imports: [CommonModule, RouterLink, RouterLinkActive],
   templateUrl: './portfolio.component.html',
   styleUrls: ['./portfolio.component.css'],
+  imports: [CommonModule, RouterLink],
 })
 export class PortfolioComponent implements OnInit {
-  isMenuOpen = false;
   private platformId = inject(PLATFORM_ID);
 
   ngOnInit() {
     if (!isPlatformBrowser(this.platformId)) {
       return;
     }
+
     gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
     // Wait for DOM to be ready
     setTimeout(() => {
@@ -43,79 +50,71 @@ export class PortfolioComponent implements OnInit {
     }, 0);
   }
 
+  constructor(@Inject(LOCALE_ID) public currentLang: 'ro' | 'en') {}
+
   projects: Project[] = [
     {
       name: 'Petru Rares Residence',
       location: 'Str. Petru Rareș, 5-9, Sector 1, București',
       year: '2020',
-      type: 'Rezidențial Premium',
-      image: '/Petru rares 2.jpg',
+      type: { ro: 'Rezidențial Premium', en: 'Premium Residential' },
+      image: 'Petru rares 2.jpg',
     },
     {
       name: 'Dr Felix',
       location: 'Str. Dr Felix 26, Sector 1, București',
       year: '2016',
-      type: 'Rezidențial Premium',
-      image: '/Dr Felix.jpg',
+      type: { ro: 'Rezidențial Premium', en: 'Premium Residential' },
+      image: 'Dr Felix.jpg',
     },
     {
       name: 'Smart City Residence 1,2,3',
       location: 'Bragadiru, Ilfov',
       year: '2014-2018',
-      type: 'Rezidențial Modern',
-      image: '/Diamantului 3.jpg',
+      type: { ro: 'Rezidențial Modern', en: 'Modern Residential' },
+      image: 'Diamantului 3.jpg',
     },
     {
       name: 'Ela Cotroceni',
       location: 'Nutu Ion 2',
       year: '2023',
-      type: 'Rezidential',
-      image: '/Ela Cotroceni 1.jpeg',
+      type: { ro: 'Rezidențial', en: 'Residential' },
+      image: 'Ela Cotroceni 1.jpeg',
     },
     {
       name: 'Bastiliei',
       location: 'Str. Caderea Bastiliei 52',
       year: '2022',
-      type: 'Office',
-      image: '/caderea bastiliei 2.jpg',
+      type: { ro: 'Birouri', en: 'Office' },
+      image: 'caderea bastiliei 2.jpg',
     },
     {
       name: 'Razoare',
       location: 'Strada Progresului 25-27',
       year: '2022',
-      type: 'Industrial/Office',
-      image: '/Razaore Offices 1.jpg',
+      type: { ro: 'Industrial/Office', en: 'Industrial/Office' },
+      image: 'Razaore Offices 1.jpg',
     },
     {
       name: 'Ghermanesti',
       location: 'Ghermanesti, Ilfov',
       year: '2023',
-      type: 'Commercial',
-      image:
-        '/ghermanesti.jpg',
+      type: { ro: 'Comercial', en: 'Commercial' },
+      image: 'ghermanesti.png',
     },
     {
       name: 'Tarlungeni',
       location: 'Tarlungeni Brasov',
       year: '2025',
-      type: 'Comercial',
-      image:
-        '/tarlungeni.jpg',
+      type: { ro: 'Comercial', en: 'Commercial' },
+      image: 'ghermanesti.png',
     },
     {
       name: 'Dragalina',
       location: 'Dr Dragalina',
       year: '2021',
-      type: 'Aparthotel',
-      image: '/Dragalina 1.jpeg',
+      type: { ro: 'Aparthotel', en: 'Aparthotel' },
+      image: 'Dragalina 1.jpeg',
     },
   ];
-
-  toggleMenu() {
-    this.isMenuOpen = !this.isMenuOpen;
-  }
-
-  closeMenu() {
-    this.isMenuOpen = false;
-  }
 }

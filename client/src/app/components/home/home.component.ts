@@ -4,21 +4,23 @@ import { isPlatformBrowser, NgOptimizedImage } from '@angular/common';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ScrollSmoother } from 'gsap/ScrollSmoother';
+import { Language, LanguageService } from '../../services/language.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
-  imports: [RouterLink, RouterLinkActive, NgOptimizedImage],
+  imports: [RouterLink, NgOptimizedImage],
 })
 export class HomeComponent implements OnInit {
-  isMenuOpen = false;
   private platformId = inject(PLATFORM_ID);
 
   ngOnInit() {
     if (!isPlatformBrowser(this.platformId)) {
       return;
     }
+
     gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
     // Wait for DOM to be ready
     setTimeout(() => {
@@ -33,13 +35,5 @@ export class HomeComponent implements OnInit {
         });
       }
     }, 0);
-  }
-
-  toggleMenu() {
-    this.isMenuOpen = !this.isMenuOpen;
-  }
-
-  closeMenu() {
-    this.isMenuOpen = false;
   }
 }

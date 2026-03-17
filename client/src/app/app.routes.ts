@@ -1,45 +1,53 @@
-import { Routes } from "@angular/router";
-import { HomeComponent } from "./components/home/home.component";
+import { Routes } from '@angular/router';
+import { HomeComponent } from './components/home/home.component';
 
 export const routes: Routes = [
   {
-    path: "home",
+    path: 'home',
     component: HomeComponent,
   },
   {
-    path: "about",
+    path: 'about',
     loadComponent: () =>
-      import("./components/about/about.component").then(
-        (m) => m.AboutComponent
+      import('./components/about/about.component').then(
+        (m) => m.AboutComponent,
       ),
   },
   {
-    path: "energy-solutions",
+    path: 'energy-solutions',
     loadComponent: () =>
-      import("./components/energy-solutions/energy-solutions.component").then(
-        (m) => m.EnergySolutionsComponent
+      import('./components/energy-solutions/energy-solutions.component').then(
+        (m) => m.EnergySolutionsComponent,
       ),
   },
   {
-    path: "portfolio",
+    path: 'portfolio',
     loadComponent: () =>
-      import("./components/portfolio/portfolio.component").then(
-        (m) => m.PortfolioComponent
+      import('./components/portfolio/portfolio.component').then(
+        (m) => m.PortfolioComponent,
       ),
   },
   {
-    path: "partnership",
+  path: 'energy-solutions/proiect-ganeasa',
+  loadComponent: () =>
+    import('./components/energy-solutions/Proiect-Ganeasa').then(
+      (m) => m.ProiectGaneasaComponent
+    ),
+},
+  {
+    path: 'partnership',
     loadComponent: () =>
-      import("./components/partnership/partnership.component").then(
-        (m) => m.PartnershipComponent
+      import('./components/partnership/partnership.component').then(
+        (m) => m.PartnershipComponent,
       ),
   },
   {
-    path: "contact",
+    path: 'contact',
     loadComponent: () =>
-      import("./components/contact/contact.component").then(
-        (m) => m.ContactComponent
+      import('./components/contact/contact.component').then(
+        (m) => m.ContactComponent,
       ),
   },
-  { path: "", redirectTo: "home", pathMatch: "full" },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '**', redirectTo: 'home' },
 ];

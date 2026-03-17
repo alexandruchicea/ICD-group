@@ -17,6 +17,8 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ScrollSmoother } from 'gsap/ScrollSmoother';
 import { API_URL } from '../../../app.config.url';
+import { Subscription } from 'rxjs';
+import { LanguageService, Language } from '../../services/language.service';
 
 declare global {
   interface Window {
@@ -27,7 +29,7 @@ declare global {
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule, CommonModule, RouterLink, RouterLinkActive],
+  imports: [FormsModule, CommonModule, RouterLink],
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css'],
 })
@@ -35,7 +37,7 @@ export class ContactComponent implements AfterViewInit, OnInit {
   @ViewChild('recaptchaElem', { static: false }) recaptchaElem!: ElementRef;
   widgetId: number | null = null;
 
-  isMenuOpen = false;
+  private platformId = inject(PLATFORM_ID);
 
   contactForm = {
     name: '',
@@ -63,6 +65,7 @@ export class ContactComponent implements AfterViewInit, OnInit {
     if (!isPlatformBrowser(this.platformId)) {
       return;
     }
+
     gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
     // Wait for DOM to be ready
     setTimeout(() => {
@@ -79,15 +82,6 @@ export class ContactComponent implements AfterViewInit, OnInit {
     }, 0);
   }
 
-  toggleMenu() {
-    this.isMenuOpen = !this.isMenuOpen;
-  }
-
-  closeMenu() {
-    this.isMenuOpen = false;
-  }
-
-  private platformId = inject(PLATFORM_ID);
   ngAfterViewInit() {
     if (isPlatformBrowser(this.platformId)) {
       this.renderRecaptcha();
@@ -95,14 +89,11 @@ export class ContactComponent implements AfterViewInit, OnInit {
   }
 
   renderRecaptcha() {
-    // Wait for reCAPTCHA to be loaded
-    if (typeof window.grecaptcha === 'undefined') {
-      // If reCAPTCHA is not loaded yet, wait and retry
+    if (typeof window.grecaptcha === 'undefined' || !window.grecaptcha.render) {
       setTimeout(() => this.renderRecaptcha(), 100);
       return;
     }
 
-    // Remove any previous widget if present
     if (this.widgetId !== null && window.grecaptcha) {
       try {
         window.grecaptcha.reset(this.widgetId);
@@ -114,6 +105,7 @@ export class ContactComponent implements AfterViewInit, OnInit {
     // Render the widget
     if (
       window.grecaptcha &&
+      window.grecaptcha.render &&
       this.recaptchaElem &&
       this.recaptchaElem.nativeElement
     ) {
@@ -140,7 +132,6 @@ export class ContactComponent implements AfterViewInit, OnInit {
       setTimeout(() => this.renderRecaptcha(), 100);
     }
   }
-
   onSubmit(event: Event) {
     event.preventDefault();
     this.recaptchaError = false;

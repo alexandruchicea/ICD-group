@@ -4,16 +4,20 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ScrollSmoother } from 'gsap/ScrollSmoother';
 import { isPlatformBrowser } from '@angular/common';
+import { Subscription } from 'rxjs';
+import { LanguageService, Language } from '../../services/language.service';
 
 @Component({
   selector: 'app-about',
-  imports: [RouterLink, RouterLinkActive],
+  imports: [RouterLink],
   templateUrl: './about.component.html',
-  styleUrls: ['./about.component.css']
+  styleUrls: ['./about.component.css'],
 })
 export class AboutComponent implements OnInit {
-  isMenuOpen = false;
+
   private platformId = inject(PLATFORM_ID);
+
+
   ngOnInit() {
     if (!isPlatformBrowser(this.platformId)) {
       return;
@@ -28,17 +32,9 @@ export class AboutComponent implements OnInit {
           wrapper: '#smooth-wrapper',
           content: '#smooth-content',
           smooth: 1.2,
-          effects: true
+          effects: true,
         });
       }
     }, 0);
   }
-
-  toggleMenu() {
-    this.isMenuOpen = !this.isMenuOpen;
-  }
-
-  closeMenu() {
-    this.isMenuOpen = false;
-  }
-} 
+}
