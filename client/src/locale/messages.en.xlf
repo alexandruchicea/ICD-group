@@ -39,6 +39,11 @@
         <target>Project Găneasa</target>
       </trans-unit>
 
+      <trans-unit id="anunturi" datatype="html">
+        <source>Anunțuri</source>
+        <target>Announcements</target>
+      </trans-unit>
+
       <!-- Portfolio -->
       <trans-unit id="portfolio" datatype="html">
         <source>Portofoliu Imobiliar</source>

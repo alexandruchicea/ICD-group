@@ -35,6 +35,13 @@ export const routes: Routes = [
     ),
 },
   {
+    path: 'energy-solutions/anunturi',
+    loadComponent: () =>
+      import('./components/announcements/announcements.component').then(
+        (m) => m.AnnouncementsComponent,
+      ),
+  },
+  {
     path: 'partnership',
     loadComponent: () =>
       import('./components/partnership/partnership.component').then(

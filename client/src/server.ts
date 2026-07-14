@@ -15,7 +15,14 @@ const browserDistFolder = resolve(serverDistFolder, '../browser');
 const app = express();
 app.use(compression());
 
-const angularApp = new AngularNodeAppEngine();
+const angularApp = new AngularNodeAppEngine({
+  allowedHosts: [
+    "http://localhost:4000",
+    "http://localhost:4200",
+    "localhost",
+    "https://icdd.ro"
+  ]
+});
 
 /**
  * Serve static files from /browser

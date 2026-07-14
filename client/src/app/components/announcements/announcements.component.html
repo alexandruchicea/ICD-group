@@ -1,0 +1,126 @@
+<div id="smooth-wrapper">
+  <div id="smooth-content">
+    <main class="main-content">
+      <!-- Hero Section -->
+      <section class="hero">
+        <img
+          src="fotovoltaic 1.jpg"
+          alt="Parc fotovoltaic"
+          style="
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+            filter: brightness(70%);
+          "
+        />
+        <div class="hero-content">
+          <p class="hero-subtitle">Anunț procedură competitivă</p>
+          <h1>Construire Parc de Panouri Fotovoltaice — Găneasa</h1>
+          <p>Finanțat prin Fondul pentru Modernizare</p>
+        </div>
+      </section>
+
+      <!-- Procedure Details Section -->
+      <section class="section">
+        <div class="container">
+          <div class="section-title">
+            <h2>Detalii Procedură</h2>
+            <p>
+              Beneficiarul <strong>S.C. GREEN NEW ENERGY GĂNEASA S.R.L.</strong>
+              invită operatorii economici să participe la procedura de atribuire
+              a contractului de proiectare, furnizare și execuție lucrări pentru
+              o centrală electrică fotovoltaică de 4,5 MW, în cadrul proiectului
+              „CONSTRUIRE PARC DE PANOURI FOTOVOLTAICE” (Cod proiect: 329754).
+            </p>
+          </div>
+
+          <div class="card details-card fade-in-up">
+            <ul class="details">
+              <li><span>Tip procedură</span><strong>Procedură competitivă</strong></li>
+              <li><span>Obiectul contractului</span><strong>Proiectare, furnizare și execuție lucrări</strong></li>
+              <li><span>Locația</span><strong>Jud. Ilfov, Com. Găneasa, Sat Cozieni</strong></li>
+              <li><span>Valoare estimată</span><strong>8.171.000,00 lei fără TVA</strong></li>
+              <li><span>Termen limită depunere oferte</span><strong>29 iulie 2026, ora 12:00</strong></li>
+              <li><span>Depunere oferte</span><strong>On-line, prin e-mail: ganeasa&#64;icdd.ro</strong></li>
+            </ul>
+            <p class="details-note">
+              Specificațiile tehnice, cuprinzând toate cerințele necesare pentru
+              elaborarea ofertei, pot fi descărcate mai jos sau se pot obține
+              gratuit printr-o solicitare la adresa de e-mail:
+              <a href="mailto:ganeasa@icdd.ro">ganeasa&#64;icdd.ro</a>.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Documents Section -->
+      <section class="section" style="background-color: var(--light-gray)">
+        <div class="container">
+          <div class="section-title">
+            <h2>Documentația Procedurii</h2>
+            <p>
+              Descărcați documentația completă a procedurii competitive. Fișierele
+              sunt disponibile în format PDF și Word.
+            </p>
+          </div>
+
+          <div class="grid grid-2">
+            <div class="card doc-card fade-in-up" *ngFor="let doc of documents">
+              <div class="doc-head">
+                <span class="doc-badge" [class.docx]="doc.type === 'DOCX'">
+                  {{ doc.type }}
+                </span>
+                <h3>{{ doc.title }}</h3>
+              </div>
+              <p>{{ doc.description }}</p>
+              <a
+                class="btn btn-primary doc-download"
+                [href]="doc.file"
+                [attr.download]="doc.downloadName"
+                target="_blank"
+                rel="noopener"
+              >
+                Descarcă
+                <span class="doc-download-icon" aria-hidden="true">↓</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>ICD GROUP</h3>
+          <p>Dezvoltăm Comunități. Generăm Viitor.</p>
+        </div>
+        <div class="footer-section">
+          <h4><a routerLink="/contact">Contact</a></h4>
+          <h4>
+            <a
+              href="https://docs.google.com/document/d/1oCtRIs4Vv5bFFu3Q44Prhmxw0EmAeO3flP8Cld3Yb5k/edit?usp=sharing"
+              target="_blank"
+              rel="noopener"
+              >Info GDPR</a
+            >
+          </h4>
+        </div>
+        <div class="footer-section">
+          <h4>Divizii</h4>
+          <ul>
+            <li>Dezvoltări Energetice</li>
+            <li>Dezvoltări Imobiliare</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 ICD GROUP. Toate drepturile rezervate.</p>
+      </div>
+    </footer>
+  </div>
+</div>
