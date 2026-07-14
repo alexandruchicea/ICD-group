@@ -20,7 +20,8 @@ const angularApp = new AngularNodeAppEngine({
     "http://localhost:4000",
     "http://localhost:4200",
     "localhost",
-    "https://icdd.ro"
+    "https://icdd.ro",
+    "icdd.ro"
   ]
 });
 

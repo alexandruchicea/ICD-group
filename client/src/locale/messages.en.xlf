@@ -44,6 +44,88 @@
         <target>Announcements</target>
       </trans-unit>
 
+      <!-- Announcements page -->
+      <trans-unit id="announcementHeroSubtitle" datatype="html">
+        <source>Anunț procedură competitivă</source>
+        <target>Competitive Procedure Announcement</target>
+      </trans-unit>
+      <trans-unit id="announcementHeroTitle" datatype="html">
+        <source>Construire Parc de Panouri Fotovoltaice — Găneasa</source>
+        <target>Photovoltaic Park Construction — Găneasa</target>
+      </trans-unit>
+      <trans-unit id="announcementHeroFunding" datatype="html">
+        <source>Finanțat prin Fondul pentru Modernizare</source>
+        <target>Funded through the Modernisation Fund</target>
+      </trans-unit>
+      <trans-unit id="announcementDetailsTitle" datatype="html">
+        <source>Detalii Procedură</source>
+        <target>Procedure Details</target>
+      </trans-unit>
+      <trans-unit id="announcementDetailsIntro" datatype="html">
+        <source>Beneficiarul S.C. GREEN NEW ENERGY GĂNEASA S.R.L. invită operatorii economici să participe la procedura de atribuire a contractului de proiectare, furnizare și execuție lucrări pentru o centrală electrică fotovoltaică de 4,5 MW, în cadrul proiectului „CONSTRUIRE PARC DE PANOURI FOTOVOLTAICE” (Cod proiect: 329754).</source>
+        <target>The Beneficiary S.C. GREEN NEW ENERGY GĂNEASA S.R.L. invites economic operators to take part in the award procedure for the design, supply and works execution contract for a 4.5 MW photovoltaic power plant, as part of the „PHOTOVOLTAIC PARK CONSTRUCTION” project (Project code: 329754).</target>
+      </trans-unit>
+      <trans-unit id="announcementDetailProcedureLabel" datatype="html">
+        <source>Tip procedură</source>
+        <target>Procedure type</target>
+      </trans-unit>
+      <trans-unit id="announcementDetailProcedureValue" datatype="html">
+        <source>Procedură competitivă</source>
+        <target>Competitive procedure</target>
+      </trans-unit>
+      <trans-unit id="announcementDetailObjectLabel" datatype="html">
+        <source>Obiectul contractului</source>
+        <target>Contract object</target>
+      </trans-unit>
+      <trans-unit id="announcementDetailObjectValue" datatype="html">
+        <source>Proiectare, furnizare și execuție lucrări</source>
+        <target>Design, supply and works execution</target>
+      </trans-unit>
+      <trans-unit id="announcementDetailLocationLabel" datatype="html">
+        <source>Locația</source>
+        <target>Location</target>
+      </trans-unit>
+      <trans-unit id="announcementDetailValueLabel" datatype="html">
+        <source>Valoare estimată</source>
+        <target>Estimated value</target>
+      </trans-unit>
+      <trans-unit id="announcementDetailValueValue" datatype="html">
+        <source>8.171.000,00 lei fără TVA</source>
+        <target>8,171,000.00 lei excl. VAT</target>
+      </trans-unit>
+      <trans-unit id="announcementDetailDeadlineLabel" datatype="html">
+        <source>Termen limită depunere oferte</source>
+        <target>Bid submission deadline</target>
+      </trans-unit>
+      <trans-unit id="announcementDetailDeadlineValue" datatype="html">
+        <source>29 iulie 2026, ora 12:00</source>
+        <target>29 July 2026, 12:00</target>
+      </trans-unit>
+      <trans-unit id="announcementDetailSubmissionLabel" datatype="html">
+        <source>Depunere oferte</source>
+        <target>Bid submission</target>
+      </trans-unit>
+      <trans-unit id="announcementDetailSubmissionValue" datatype="html">
+        <source>On-line, prin e-mail: ganeasa&#64;icdd.ro</source>
+        <target>Online, by e-mail: ganeasa&#64;icdd.ro</target>
+      </trans-unit>
+      <trans-unit id="announcementDetailsNote" datatype="html">
+        <source>Specificațiile tehnice, cuprinzând toate cerințele necesare pentru elaborarea ofertei, pot fi descărcate mai jos sau se pot obține gratuit printr-o solicitare la adresa de e-mail:</source>
+        <target>The technical specifications, containing all the requirements needed to prepare the bid, can be downloaded below or obtained free of charge upon request at the e-mail address:</target>
+      </trans-unit>
+      <trans-unit id="announcementDocsTitle" datatype="html">
+        <source>Documentația Procedurii</source>
+        <target>Procedure Documentation</target>
+      </trans-unit>
+      <trans-unit id="announcementDocsIntro" datatype="html">
+        <source>Descărcați documentația completă a procedurii competitive. Fișierele sunt disponibile în format PDF și Word.</source>
+        <target>Download the complete documentation of the competitive procedure. The files are available in PDF and Word format.</target>
+      </trans-unit>
+      <trans-unit id="announcementDownload" datatype="html">
+        <source>Descarcă</source>
+        <target>Download</target>
+      </trans-unit>
+
       <!-- Portfolio -->
       <trans-unit id="portfolio" datatype="html">
         <source>Portofoliu Imobiliar</source>
