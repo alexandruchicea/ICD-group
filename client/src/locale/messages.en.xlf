@@ -57,6 +57,18 @@
         <source>Finanțat prin Fondul pentru Modernizare</source>
         <target>Funded through the Modernisation Fund</target>
       </trans-unit>
+      <trans-unit id="announcementFundingLogoAlt" datatype="html">
+        <source>Finanțat de Uniunea Europeană</source>
+        <target>Funded by the European Union</target>
+      </trans-unit>
+      <trans-unit id="announcementFundingLogoGov" datatype="html">
+        <source>Guvernul României</source>
+        <target>Government of Romania</target>
+      </trans-unit>
+      <trans-unit id="announcementFundingLogoUe" datatype="html">
+        <source>Finanțat de Uniunea Europeană – Fondul pentru modernizare</source>
+        <target>Funded by the European Union – Modernisation Fund</target>
+      </trans-unit>
       <trans-unit id="announcementDetailsTitle" datatype="html">
         <source>Detalii Procedură</source>
         <target>Procedure Details</target>

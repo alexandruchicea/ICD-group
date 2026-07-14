@@ -2,6 +2,31 @@
   display: block;
 }
 
+/* ── Funding logos (EU / EC) on the hero ── */
+.funding-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.funding-logos img {
+  height: 128px;
+  width: auto;
+  max-width: 100%;
+  background: var(--white);
+  padding: 0.75rem 1.25rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
+@media (max-width: 768px) {
+  .funding-logos img {
+    height: 64px;
+  }
+}
+
 /* ── Procedure details card ── */
 .details-card {
   max-width: 820px;
